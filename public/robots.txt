@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*?sort=price*
+Disallow: /*?filter=*
+
+Sitemap: https://www.emirdenizliotokiralama.com.tr/sitemap.xml
