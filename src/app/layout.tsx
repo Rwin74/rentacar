@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import CookieBanner from "@/components/CookieBanner";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,9 +51,26 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${inter.variable} h-full antialiased scroll-smooth`}>
       <body className={`${inter.className} flex flex-col min-h-screen bg-stone-50 text-stone-900`}>
+        {process.env.NEXT_PUBLIC_GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+              `}
+            </Script>
+          </>
+        ) : null}
         <Navbar />
         {children}
         <FloatingWhatsApp />
+        <CookieBanner />
         <Footer />
       </body>
     </html>
