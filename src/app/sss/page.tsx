@@ -54,13 +54,13 @@ export default function SSS() {
         "@type": "ListItem",
         "position": 1,
         "name": "Ana Sayfa",
-        "item": "https://www.emirdenizliotokiralama.com.tr/"
+        "item": "https://www.emirdenizliotokiralama.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Sıkça Sorulan Sorular",
-        "item": "https://www.emirdenizliotokiralama.com.tr/sss"
+        "item": "https://www.emirdenizliotokiralama.com/sss"
       }
     ]
   };

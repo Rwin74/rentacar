@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-stone-900 flex-none text-stone-300 py-16 mt-auto">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         
         {/* Brand & Contact Info */}
         <div className="space-y-6">
@@ -28,9 +28,22 @@ export default function Footer() {
               <strong className="text-white">Telefon:</strong> <a href="tel:+905543950404" className="hover:text-white transition">+90 554 395 04 04</a>
             </p>
             <p className="flex items-center gap-2">
-              <strong className="text-white">E-posta:</strong> <a href="mailto:info@emirdenizliotokiralama.com.tr" className="hover:text-white transition">info@emirdenizliotokiralama.com.tr</a>
+              <strong className="text-white">E-posta:</strong> <a href="mailto:info@emirdenizliotokiralama.com" className="hover:text-white transition">info@emirdenizliotokiralama.com</a>
             </p>
           </div>
+        </div>
+
+        {/* Hizmet Bölgeleri */}
+        <div>
+          <h3 className="text-lg font-bold text-white mb-6">Hizmet Bölgeleri</h3>
+          <ul className="space-y-3 text-sm">
+             <li><Link href="/denizli-rent-a-car" className="hover:text-red-400 transition">Denizli Rent A Car</Link></li>
+             <li><Link href="/denizli-arac-kiralama" className="hover:text-red-400 transition">Denizli Araç Kiralama</Link></li>
+             <li><Link href="/denizli-oto-kiralama" className="hover:text-red-400 transition">Denizli Oto Kiralama</Link></li>
+             <li><Link href="/cardak-havalimani-arac-kiralama" className="hover:text-red-400 transition">Çardak Havalimanı Araç Kiralama</Link></li>
+             <li><Link href="/pamukkale-arac-kiralama" className="hover:text-red-400 transition">Pamukkale Araç Kiralama</Link></li>
+             <li><Link href="/merkezefendi-arac-kiralama" className="hover:text-red-400 transition">Merkezefendi Araç Kiralama</Link></li>
+          </ul>
         </div>
 
         {/* Quick Links */}
@@ -82,7 +95,7 @@ export default function Footer() {
         </div>
 
       </div>
-      <div className="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-stone-800 flex flex-col items-center gap-4 text-center text-xs text-stone-500">
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-stone-800 flex flex-col items-center gap-4 text-center text-xs text-stone-500">
         <p>&copy; {new Date().getFullYear()} Emir Rent A Car, Denizli. Tüm Hakları Saklıdır.</p>
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-stone-400">
           <p>

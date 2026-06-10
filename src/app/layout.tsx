@@ -13,16 +13,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.emirdenizliotokiralama.com.tr"),
-  title: "Denizli Rent A Car | Emir Oto Kiralama - Havalimanı Teslim",
-  description: "Denizli ucuz rent a car, denizli araç kiralama ve profesyonel denizli oto kiralama firması arayışlarınızda Emir Rent A Car hizmetinizde. Denizli rent a car ofisimizden güvenle kiralayın.",
+  metadataBase: new URL("https://www.emirdenizliotokiralama.com"),
+  title: "Denizli Rent A Car & Araç Kiralama | Emir Oto Kiralama",
+  description: "Denizli rent a car ve araç kiralama hizmetlerinde ekonomik, bakımlı ve sigortalı araç seçenekleri. Günlük, aylık ve havalimanı teslim kiralama.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Denizli Rent A Car | Emir Oto Kiralama - Havalimanı Teslim",
-    description: "Denizli ucuz rent a car, denizli araç kiralama ve profesyonel denizli oto kiralama firması. Denizli rent a car ofisimizden güvenle kiralayın.",
-    url: "https://www.emirdenizliotokiralama.com.tr",
+    title: "Denizli Rent A Car & Araç Kiralama | Emir Oto Kiralama",
+    description: "Denizli rent a car ve araç kiralama hizmetlerinde ekonomik, bakımlı ve sigortalı araç seçenekleri. Günlük, aylık ve havalimanı teslim kiralama.",
+    url: "https://www.emirdenizliotokiralama.com",
     siteName: "Emir Rent A Car",
     images: [
       {

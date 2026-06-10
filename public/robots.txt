@@ -3,4 +3,4 @@ Allow: /
 Disallow: /*?sort=price*
 Disallow: /*?filter=*
 
-Sitemap: https://www.emirdenizliotokiralama.com.tr/sitemap.xml
+Sitemap: https://www.emirdenizliotokiralama.com/sitemap.xml

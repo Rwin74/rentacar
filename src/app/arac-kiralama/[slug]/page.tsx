@@ -55,7 +55,7 @@ export default async function CarDetailPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": car.model,
-    "image": `https://www.emirdenizliotokiralama.com.tr${car.image}`,
+    "image": `https://www.emirdenizliotokiralama.com${car.image}`,
     "description": car.description,
     "brand": {
       "@type": "Brand",
@@ -63,7 +63,7 @@ export default async function CarDetailPage({ params }: Props) {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://www.emirdenizliotokiralama.com.tr/arac-kiralama/${car.slug}`,
+      "url": `https://www.emirdenizliotokiralama.com/arac-kiralama/${car.slug}`,
       "priceCurrency": "TRY",
       "price": car.priceNumber,
       "availability": "https://schema.org/InStock",
@@ -99,19 +99,19 @@ export default async function CarDetailPage({ params }: Props) {
         "@type": "ListItem",
         "position": 1,
         "name": "Ana Sayfa",
-        "item": "https://www.emirdenizliotokiralama.com.tr/"
+        "item": "https://www.emirdenizliotokiralama.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Araç Filomuz",
-        "item": "https://www.emirdenizliotokiralama.com.tr/araclar"
+        "item": "https://www.emirdenizliotokiralama.com/araclar"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": car.model,
-        "item": `https://www.emirdenizliotokiralama.com.tr/arac-kiralama/${car.slug}`
+        "item": `https://www.emirdenizliotokiralama.com/arac-kiralama/${car.slug}`
       }
     ]
   };

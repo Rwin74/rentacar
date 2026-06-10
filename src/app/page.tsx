@@ -8,10 +8,10 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "AutoRental",
     "name": "Emir Rent A Car",
-    "image": "https://www.emirdenizliotokiralama.com.tr/images/logo.png",
-    "url": "https://www.emirdenizliotokiralama.com.tr",
+    "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+    "url": "https://www.emirdenizliotokiralama.com",
     "telephone": "+905543950404",
-    "email": "info@emirdenizliotokiralama.com.tr",
+    "email": "info@emirdenizliotokiralama.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "15 Mayıs Mahallesi Atatürk Caddesi No:31 Adım Apartmanı",
@@ -60,7 +60,7 @@ export default function Home() {
               Emir ile <span className="text-red-600">Denizli Araç Kiralama</span> Deneyimi
             </h1>
             <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-              Her bütçeye uygun, bakımlı ve geniş araç filosuyla hizmetinizdeyiz. <strong>Denizli ucuz rent a car</strong> ve kusursuz <strong>denizli oto kiralama</strong> arayışınızda en güvenilir tercihiniz Emir Rent A Car&apos;dır. Güvenilir bir <strong>denizli rent a car</strong> deneyimi için hemen rezervasyon yapın.
+              Her bütçeye uygun, bakımlı ve geniş araç filosuyla hizmetinizdeyiz. <strong>Denizli rent a car</strong> ve kusursuz <strong>Denizli oto kiralama</strong> arayışınızda en güvenilir tercihiniz Emir Rent A Car&apos;dır. Güvenilir ve kesintisiz seyahatleriniz için havalimanından merkeze kolaylık sağlıyoruz. Özellikle <strong>Çardak havalimanı araç kiralama</strong> hizmetimizle uçağınızdan iner inmez aracınızı teslim alabilir, <strong>Denizli araç kiralama</strong> sürecinizi hızla tamamlayarak yolculuğunuza başlayabilirsiniz.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <Link href="/araclar" className="flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-2xl hover:bg-red-700 transition shadow-lg shadow-red-600/30">
@@ -139,6 +139,21 @@ export default function Home() {
                <Link href="/araclar" className="inline-flex px-8 py-3 bg-white border-2 border-red-600 text-red-600 font-bold rounded-xl hover:bg-red-50 transition">
                   Tüm Araç Filomuzu Görüntüle
                </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO - Hizmet Bölgelerimiz */}
+        <section className="bg-white py-16 border-t border-stone-200">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center tracking-tight">Öne Çıkan Hizmetlerimiz</h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/denizli-rent-a-car" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Denizli Rent A Car</Link>
+              <Link href="/denizli-arac-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Denizli Araç Kiralama</Link>
+              <Link href="/denizli-oto-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Denizli Oto Kiralama</Link>
+              <Link href="/cardak-havalimani-arac-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Çardak Havalimanı Araç Kiralama</Link>
+              <Link href="/pamukkale-arac-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Pamukkale Araç Kiralama</Link>
+              <Link href="/merkezefendi-arac-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Merkezefendi Araç Kiralama</Link>
             </div>
           </div>
         </section>
