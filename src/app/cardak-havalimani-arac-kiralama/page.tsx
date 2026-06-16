@@ -2,13 +2,13 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Çardak Havalimanı Araç Kiralama | Denizli Havalimanı Teslim',
+  title: 'Çardak Havalimanı Araç Kiralama | Emir Rent A Car',
   description: 'Çardak Havalimanı araç kiralama hizmetiyle uçağınızdan indikten sonra aracınızı hızlıca teslim alın. Emir Rent A Car Denizli.',
   alternates: {
     canonical: 'https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama',
   },
   openGraph: {
-    title: 'Çardak Havalimanı Araç Kiralama | Denizli Havalimanı Teslim',
+    title: 'Çardak Havalimanı Araç Kiralama | Emir Rent A Car',
     description: 'Çardak Havalimanı araç kiralama hizmetiyle uçağınızdan indikten sonra aracınızı hızlıca teslim alın. Emir Rent A Car Denizli.',
     url: 'https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama',
   }

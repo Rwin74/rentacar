@@ -2,13 +2,13 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Pamukkale Araç Kiralama | Günlük Rent A Car Denizli',
+  title: 'Pamukkale Araç Kiralama | Emir Rent A Car',
   description: 'Pamukkale araç kiralama hizmetiyle turistik geziler, iş seyahatleri ve şehir içi kullanım için uygun araç seçenekleri.',
   alternates: {
     canonical: 'https://www.emirdenizliotokiralama.com/pamukkale-arac-kiralama',
   },
   openGraph: {
-    title: 'Pamukkale Araç Kiralama | Günlük Rent A Car Denizli',
+    title: 'Pamukkale Araç Kiralama | Emir Rent A Car',
     description: 'Pamukkale araç kiralama hizmetiyle turistik geziler, iş seyahatleri ve şehir içi kullanım için uygun araç seçenekleri.',
     url: 'https://www.emirdenizliotokiralama.com/pamukkale-arac-kiralama',
   }

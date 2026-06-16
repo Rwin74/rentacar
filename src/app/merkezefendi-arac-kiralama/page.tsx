@@ -2,13 +2,13 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Merkezefendi Araç Kiralama | Denizli Rent A Car',
+  title: 'Merkezefendi Araç Kiralama | Emir Rent A Car',
   description: 'Merkezefendi araç kiralama hizmetiyle Denizli merkezde ekonomik, güvenilir ve bakımlı araç kiralama seçenekleri.',
   alternates: {
     canonical: 'https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama',
   },
   openGraph: {
-    title: 'Merkezefendi Araç Kiralama | Denizli Rent A Car',
+    title: 'Merkezefendi Araç Kiralama | Emir Rent A Car',
     description: 'Merkezefendi araç kiralama hizmetiyle Denizli merkezde ekonomik, güvenilir ve bakımlı araç kiralama seçenekleri.',
     url: 'https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama',
   }

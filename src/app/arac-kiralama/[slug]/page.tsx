@@ -28,7 +28,7 @@ export async function generateMetadata(
     },
     openGraph: {
       title: `${car.model} Kiralama Denizli`,
-      description: car.description,
+      description: car.description.join(' '),
       images: [
         {
           url: car.image,
@@ -56,7 +56,7 @@ export default async function CarDetailPage({ params }: Props) {
     "@type": "Product",
     "name": car.model,
     "image": `https://www.emirdenizliotokiralama.com${car.image}`,
-    "description": car.description,
+    "description": car.description.join(' '),
     "brand": {
       "@type": "Brand",
       "name": car.brand
@@ -144,6 +144,8 @@ export default async function CarDetailPage({ params }: Props) {
                 alt={`${car.model} kiralama Denizli`}
                 width={800}
                 height={600}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                 priority
                 className="w-full h-auto object-contain drop-shadow-2xl"
               />
@@ -164,10 +166,12 @@ export default async function CarDetailPage({ params }: Props) {
               </div>
 
               <div className="prose prose-stone mb-10">
-                <h3 className="text-xl font-bold text-stone-800 mb-3">Araç Hakkında</h3>
-                <p className="text-stone-600 leading-relaxed text-lg">
-                  {car.description}
-                </p>
+                <h2 className="text-xl font-bold text-stone-800 mb-4 tracking-tight">Araç Hakkında</h2>
+                <div className="text-stone-600 leading-relaxed text-lg space-y-4">
+                  {car.description.map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-4 mb-12">

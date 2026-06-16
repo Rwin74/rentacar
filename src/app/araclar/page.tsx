@@ -43,6 +43,8 @@ export default function Araclar() {
                     alt={`Denizli rent a car - ${car.model}`}
                     width={300}
                     height={200}
+                    quality={75}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
                     className="w-full h-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform cursor-pointer"
                   />
                 </Link>

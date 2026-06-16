@@ -80,6 +80,8 @@ export default function Home() {
                 alt="Emir Rent A Car Denizli Ofisi"
                 width={600}
                 height={400}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 600px"
                 priority
                 className="object-cover w-full h-auto brightness-[0.85] contrast-[1.05] group-hover:scale-105 group-hover:brightness-95 transition-all duration-700"
               />
@@ -115,13 +117,15 @@ export default function Home() {
                         alt={`Denizli rent a car - ${car.model} - Emir Rent A Car`}
                         width={300}
                         height={200}
+                        quality={75}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
                         className="w-full h-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform cursor-pointer"
                       />
                     </Link>
                   </div>
                   <h3 className="text-2xl font-bold text-stone-900 mb-1">{car.model}</h3>
                   <div className="text-red-600 font-bold text-xl mb-3">{car.price} {car.price !== "Fiyat Sorunuz" && <span className="text-sm font-normal text-stone-500">/ Günlük</span>}</div>
-                  <p className="text-stone-600 text-sm mb-6 flex-grow line-clamp-3">{car.description}</p>
+                  <p className="text-stone-600 text-sm mb-6 flex-grow line-clamp-3">{car.description[0]}</p>
                   
                   <div className="grid grid-cols-2 gap-3 mt-auto">
                      <Link href={`/arac-kiralama/${car.slug}`} className="w-full py-3 bg-stone-100 text-stone-800 rounded-xl text-sm font-bold hover:bg-stone-200 transition flex justify-center items-center">
