@@ -5,6 +5,9 @@ import { knowledgeArticles } from '@/data/knowledge';
 export const metadata: Metadata = {
   title: 'Bilgi Bankası | Emir Rent A Car Denizli',
   description: 'Oto kiralama terimleri, araç teslimat prosedürleri ve güvenli sürüş rehberi dahil olmak üzere kiralama süreci hakkında faydalı bilgiler.',
+  alternates: {
+    canonical: 'https://www.emirdenizliotokiralama.com/bilgibankasi',
+  },
 };
 
 export default function BilgiBankasi() {
