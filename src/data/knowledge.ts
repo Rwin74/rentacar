@@ -20,7 +20,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "rent-a-car-kaskosu-ve-standart-kasko-farki",
     title: "Rent a Car Kaskosu ve Standart Kasko Farkı",
-    excerpt: "Bireysel kaskolar ile kiralık araç (Rent A Car) kaskoları farklıdır. Emir Rent A Car filosundaki tüm araçlar yasal Rent a Car kaskosu ile güvence altındadır.",
+    excerpt: "Bireysel kaskolar ile kiralık araç kaskoları farklıdır. Emir Rent A Car filosundaki tüm araçlar yasal Rent a Car kaskosu ile güvence altındadır.",
     content: [
       "Oto kiralama sektöründe müşterilerin en çok kafa karışıklığı yaşadığı konulardan biri de kasko tipleri arasındaki ayrımdır. Birçok kişi, standart şahsi araç kaskosunun kiralık araçlarda da otomatik olarak geçerli olduğunu düşünür ancak bu hukuki açıdan çok ciddi bir yanılgıdır.",
       "Standart bireysel kasko poliçeleri, aracın ticari amaçla bedel karşılığında kiraya verildiğinin tespit edilmesi durumunda (örneğin polis tutanaklı bir kaza anında) doğacak hiçbir maddi veya manevi hasarı karşılamaz. Sigorta şirketleri kiralama faaliyetini 'mesleki ticari risk' sayarak poliçeyi iptal eder ve tazminat ödemeyi reddeder.",
@@ -31,7 +31,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "havalimani-arac-teslimat-prosedurleri",
     title: "Havalimanı Araç Teslimat Prosedürleri",
-    excerpt: "Uçaktan indiğiniz an beklemeden aracınıza kavuşun. Çardak Havalimanı teslimatlarında PNR kodunuzla ekstra beklemeden direkt yolculuğunuza başlayabilirsiniz.",
+    excerpt: "Uçaktan indiğiniz an beklemeden aracınıza kavuşun. Çardak Havalimanı teslimatlarında PNR kodunuzla beklemeden direkt yolculuğunuza başlayın.",
     content: [
       "İş seyahati, toplantı veya yaz tatili için Denizli Çardak Havalimanı'na iniş yaptığınızda zamanınızın ne kadar değerli olduğunu çok iyi biliyoruz. Bu bilinçle, havalimanı araç kiralama operasyon süreçlerimiz sizi terminal kapısında bir dakika bile bekletmemek üzerine özenle tasarlanmıştır.",
       "Tüm bu sorunsuz sürecin başlaması için rezervasyon aşamasında Müşteri Hizmetleri ekibimize Uçuş Numaranızı (PNR Kodu) ve iniş saatinizi bildirmeniz bizim için yeterlidir. Sistemlerimiz üzerinden uçuş bilgi ekranlarını canlı olarak anlık takip ediyoruz. Uçağınız havada rötar yapsa dahi, operasyon ekibimizin çıkışta sizi beklemesini garanti altına alıyoruz.",
@@ -42,7 +42,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "uzun-donem-aylik-arac-kiralamanin-avantajlari",
     title: "Uzun Dönem (Aylık) Araç Kiralamanın Avantajları",
-    excerpt: "Şirketler veya uzun dönem ihtiyaçlar için aylık kiralama, bakım masraflarından, MTV ve trafik sigortası gibi giderlerden kurtulmanızı sağlayan en iyi yoldur.",
+    excerpt: "Şirketler veya uzun dönem ihtiyaçlar için aylık kiralama, bakım masrafları, MTV ve trafik sigortası gibi giderlerden kurtulmanızı sağlayan yoldur.",
     content: [
       "Günümüz ekonomik şartlarında bir otomobilin öz malınız olarak satın alınması, özellikle ticaretle uğraşan KOBİ'ler, kurumsal firmalar veya yoğun seyahat eden profesyoneller için beraberinde birçok görünmez işletme maliyeti ve zaman kaybı getirmektedir. Bu noktada aylık ve uzun dönem kiralama, son yılların en mantıklı ve rasyonel ulaşım modeli olarak öne çıkmaktadır.",
       "Uzun dönem kiralamanın işletmelere sağladığı ilk ve en büyük avantaj, doğrudan Muhasebesel Gider Gösterme kolaylığıdır. Kiralama bedeline ait faturanızın tamamını şirket gideri olarak muhasebe defterinize işleyebilir, KDV'sini anında indirebilir ve böylece ciddi bir Kurumlar Vergisi avantajı sağlarsınız. Ayrıca, araç satın almaya ödeyeceğiniz yüksek toplu nakdi, doğrudan işletmenizi büyütmek veya ticari faaliyetlerinizde kullanmak için ana sermayenizde tutma fırsatı yakalarsınız.",
@@ -63,7 +63,7 @@ export const knowledgeArticles: Article[] = [
   },
   {
     slug: "denizlide-rent-a-car-secerken-nelere-dikkat-edilmeli",
-    title: "Denizli’de Rent A Car Seçerken Nelere Dikkat Edilmeli?",
+    title: "Rent A Car Seçerken Nelere Dikkat Edilmeli?",
     excerpt: "Güvenilir bir Denizli rent a car firması seçmek, sürpriz maliyetlerden kaçınmak ve sorunsuz bir seyahat için kritik öneme sahiptir.",
     content: [
       "Denizli'ye ister tekstil-mermer sektörlerindeki iş bağlantılarınız için, isterseniz de Pamukkale gibi dünyaca ünlü turistik değerleri görmek amacıyla gelmiş olun; seyahatinizin konforunu ve güvenliğini doğrudan etkileyecek en önemli karar doğru <a href=\"/denizli-rent-a-car\" className=\"text-red-600 font-medium hover:underline\">Denizli rent a car</a> firmasını belirlemektir. Sırf fiyatı çok ucuz olduğu için tercih edilen merdiven altı, yetkisiz şahıs firmaları yerine; ofisi belli olan, vergiye tabi, kurumsal ve köklü markalarla çalışmak huzurlu bir tatil için altın kuraldır.",

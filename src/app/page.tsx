@@ -32,7 +32,6 @@ export default function Home() {
 
   return (
     <>
-      <link rel="preload" href="/images/2025-12-12.webp" as="image" type="image/webp" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
@@ -102,9 +101,14 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-stone-900 mb-4 tracking-tight">Öne Çıkan Araçlarımız</h2>
-              <p className="text-stone-500 max-w-2xl mx-auto">
-                Denizli oto kiralama sektöründe en yenilikçi ve konforlu araçlarımız ile seyahatlerinizi keyfe dönüştürün.
-              </p>
+              <p className="text-xl md:text-2xl text-stone-500 mb-6 font-light max-w-2xl mx-auto">
+              Güvenli, konforlu ve prestijli araçlarımızla seyahatinizin tadını çıkarın. Çardak Havalimanı ve şehir merkezi teslimat seçeneklerimiz mevcuttur.
+            </p>
+            <p className="text-base text-stone-600 mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+              Denizli Emir Rent A Car olarak misafirlerimize en uygun fiyatlarla, en yüksek kalitede kiralama hizmeti sunmayı vizyon edindik. 
+              Geniş ve sürekli yenilenen filomuzda; yakıt tasarrufu sağlayan ekonomik binek araçlardan, kalabalık aile seyahatleri için ideal olan tam donanımlı SUV ve VIP minibüs seçeneklerine kadar her ihtiyaca yanıt veriyoruz. 
+              Tüm araçlarımız, siz değerli müşterilerimizin sağlığı ve güvenliği için her kiralama öncesi periyodik bakımdan geçirilmekte ve detaylı anti-bakteriyel solüsyonlarla temizlenmektedir. Yüzde yüz Yasal Rent A Car kaskosu ile seyahatiniz boyunca yaşanabilecek olumsuzluklara karşı tam koruma altında olmanın rahatlığını yaşayın. İster kısa dönem turistik gezileriniz, ister uzun dönem kurumsal filo kiralama talepleriniz için bizi arayabilir, ayrıcalıklı dünyanın kapılarını hemen aralayabilirsiniz.
+            </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">

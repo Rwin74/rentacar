@@ -107,7 +107,7 @@ export default function SSS() {
           </div>
 
           <div className="mt-16 text-center bg-red-50 rounded-3xl p-8 border border-red-100">
-            <h3 className="text-2xl font-bold text-red-900 mb-2">Başka sorunuz mu var?</h3>
+            <h2 className="text-2xl font-bold text-red-900 mb-2">Başka sorunuz mu var?</h2>
             <p className="text-red-700 mb-6">Müşteri hizmetlerimiz 7/24 size yardımcı olmaktan memnuniyet duyar.</p>
             <a  
               href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20sorularım%20vardı." 

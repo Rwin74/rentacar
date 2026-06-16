@@ -22,7 +22,7 @@ export async function generateMetadata(
 
   return {
     title: `${car.model} Kiralama Denizli | Emir Rent A Car`,
-    description: `${car.model} kiralama ayrıcalığı Denizli Emir Rent A Car'da! ${car.price} başlayan fiyatlarla hemen rezervasyon yapın. ${car.features.join(', ')}.`,
+    description: `${car.model} kiralama ayrıcalığı Denizli Emir Rent A Car'da! Hemen rezervasyon yapın. ${car.features.join(', ')}.`,
     alternates: {
       canonical: `/arac-kiralama/${resolvedParams.slug}`,
     },

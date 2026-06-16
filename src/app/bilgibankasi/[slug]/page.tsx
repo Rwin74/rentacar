@@ -59,9 +59,10 @@ export default async function ArticlePage({ params }: Props) {
             {article.title}
           </h1>
 
-          <div className="text-stone-700 leading-relaxed space-y-6 text-lg">
+          <div className="prose prose-stone lg:prose-lg max-w-none text-stone-600 mb-12">
+            <h2 className="sr-only">{article.title} Detayları</h2>
             {article.content.map((paragraph, index) => (
-              <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
+              <p key={index} className="mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: paragraph }}></p>
             ))}
           </div>
         </article>
