@@ -166,7 +166,7 @@ export default async function CarDetailPage({ params }: Props) {
               </div>
 
               <div className="prose prose-stone mb-10">
-                <h2 className="text-xl font-bold text-stone-800 mb-4 tracking-tight">Araç Hakkında</h2>
+                <h2 className="text-xl font-bold text-stone-800 mb-4 tracking-tight">{car.model} Kiralama Özellikleri ve Detaylar</h2>
                 <div className="text-stone-600 leading-relaxed text-lg space-y-4">
                   {car.description.map((paragraph, idx) => (
                     <p key={idx}>{paragraph}</p>

@@ -9,7 +9,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "arac-kiralarken-nelere-dikkat-edilmeli",
     title: "Araç Kiralarken Nelere Dikkat Edilmeli?",
-    excerpt: "Denizli'de veya farklı bir şehirde ilk defa araç kiralıyorsanız, sözleşme şartlarını, kasko durumunu ve aracın teslim anındaki kondisyonunu (çizik, yakıt vb.) detaylıca incelemeniz çok önemlidir.",
+    excerpt: "Araç kiralarken sözleşme şartlarını, kasko durumunu ve teslim anındaki kondisyonu detaylıca incelemek, sorunsuz bir deneyim için çok önemlidir.",
     content: [
       "Araç kiralama işlemi, özellikle seyahate çıkarken veya acil durumlarda hayat kurtarıcı bir çözüm sunar. Ancak bu işlemi sorunsuz ve sürpriz maliyetlerden uzak bir şekilde tamamlamak için dikkat edilmesi gereken bazı çok kritik noktalar bulunmaktadır. Sözleşme şartlarının en başından netleştirilmesi, hem kiralayanın hem de firmanın haklarını güvence altına alır.",
       "İlk ve en önemli konu, kiralayacağınız aracın kasko poliçesini detaylıca incelemektir. Bilinmesi gereken en temel gerçek; şahsi otomobil kaskolarının kiralık araçlarda kesinlikle geçerli olmadığıdır. Bu nedenle, olası bir kaza anında mağdur olmamak için sadece yasal Rent a Car kaskosu olan kurumsal şirketleri tercih etmelisiniz. Emir Rent A Car'da tüm araçlarımız tam kapsamlı Rent a Car kaskosu ile korunmaktadır.",
@@ -20,7 +20,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "rent-a-car-kaskosu-ve-standart-kasko-farki",
     title: "Rent a Car Kaskosu ve Standart Kasko Farkı",
-    excerpt: "Bireysel araç kaskoları ile kiralık araç (Rent A Car) kaskoları arasında büyük farklar vardır. Emir Rent A Car filosundaki tüm araçlar yasal Rent a Car kaskosuna sahip olup, güvencenizi maksimize eder.",
+    excerpt: "Bireysel kaskolar ile kiralık araç (Rent A Car) kaskoları farklıdır. Emir Rent A Car filosundaki tüm araçlar yasal Rent a Car kaskosu ile güvence altındadır.",
     content: [
       "Oto kiralama sektöründe müşterilerin en çok kafa karışıklığı yaşadığı konulardan biri de kasko tipleri arasındaki ayrımdır. Birçok kişi, standart şahsi araç kaskosunun kiralık araçlarda da otomatik olarak geçerli olduğunu düşünür ancak bu hukuki açıdan çok ciddi bir yanılgıdır.",
       "Standart bireysel kasko poliçeleri, aracın ticari amaçla bedel karşılığında kiraya verildiğinin tespit edilmesi durumunda (örneğin polis tutanaklı bir kaza anında) doğacak hiçbir maddi veya manevi hasarı karşılamaz. Sigorta şirketleri kiralama faaliyetini 'mesleki ticari risk' sayarak poliçeyi iptal eder ve tazminat ödemeyi reddeder.",
@@ -31,7 +31,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "havalimani-arac-teslimat-prosedurleri",
     title: "Havalimanı Araç Teslimat Prosedürleri",
-    excerpt: "Uçağınızdan indiğiniz anda aracınızın hazır olması için uçuş kodunuzu (PNR) rezervasyon sırasında yetkiliye bildirmeniz yeterlidir. Çardak Havalimanı teslimatlarında ekstra beklemeden yolculuğunuza başlayabilirsiniz.",
+    excerpt: "Uçaktan indiğiniz an beklemeden aracınıza kavuşun. Çardak Havalimanı teslimatlarında PNR kodunuzla ekstra beklemeden direkt yolculuğunuza başlayabilirsiniz.",
     content: [
       "İş seyahati, toplantı veya yaz tatili için Denizli Çardak Havalimanı'na iniş yaptığınızda zamanınızın ne kadar değerli olduğunu çok iyi biliyoruz. Bu bilinçle, havalimanı araç kiralama operasyon süreçlerimiz sizi terminal kapısında bir dakika bile bekletmemek üzerine özenle tasarlanmıştır.",
       "Tüm bu sorunsuz sürecin başlaması için rezervasyon aşamasında Müşteri Hizmetleri ekibimize Uçuş Numaranızı (PNR Kodu) ve iniş saatinizi bildirmeniz bizim için yeterlidir. Sistemlerimiz üzerinden uçuş bilgi ekranlarını canlı olarak anlık takip ediyoruz. Uçağınız havada rötar yapsa dahi, operasyon ekibimizin çıkışta sizi beklemesini garanti altına alıyoruz.",
@@ -42,7 +42,7 @@ export const knowledgeArticles: Article[] = [
   {
     slug: "uzun-donem-aylik-arac-kiralamanin-avantajlari",
     title: "Uzun Dönem (Aylık) Araç Kiralamanın Avantajları",
-    excerpt: "Şirketler veya bireysel uzun dönem ihtiyaçlar için aylık araç kiralama, periyodik bakım masraflarından, MTV ve trafik sigortası gibi giderlerden tamamen kurtulmanızı sağlar.",
+    excerpt: "Şirketler veya uzun dönem ihtiyaçlar için aylık kiralama, bakım masraflarından, MTV ve trafik sigortası gibi giderlerden kurtulmanızı sağlayan en iyi yoldur.",
     content: [
       "Günümüz ekonomik şartlarında bir otomobilin öz malınız olarak satın alınması, özellikle ticaretle uğraşan KOBİ'ler, kurumsal firmalar veya yoğun seyahat eden profesyoneller için beraberinde birçok görünmez işletme maliyeti ve zaman kaybı getirmektedir. Bu noktada aylık ve uzun dönem kiralama, son yılların en mantıklı ve rasyonel ulaşım modeli olarak öne çıkmaktadır.",
       "Uzun dönem kiralamanın işletmelere sağladığı ilk ve en büyük avantaj, doğrudan Muhasebesel Gider Gösterme kolaylığıdır. Kiralama bedeline ait faturanızın tamamını şirket gideri olarak muhasebe defterinize işleyebilir, KDV'sini anında indirebilir ve böylece ciddi bir Kurumlar Vergisi avantajı sağlarsınız. Ayrıca, araç satın almaya ödeyeceğiniz yüksek toplu nakdi, doğrudan işletmenizi büyütmek veya ticari faaliyetlerinizde kullanmak için ana sermayenizde tutma fırsatı yakalarsınız.",

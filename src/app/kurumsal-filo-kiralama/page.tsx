@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Kurumsal Filo Kiralama | Emir Rent A Car',
-  description: 'Denizli kurumsal uzun dönem araç kiralama ve filo kiralama avantajlarıyla vergi yükünden kurtulun. Şirketlere özel fiyatlarla binek ve ticari kiralama çözümleri.',
+  description: 'Denizli kurumsal uzun dönem araç kiralama ve filo avantajlarıyla vergi yükünden kurtulun. Şirketlere özel fiyatlarla binek kiralama çözümleri.',
   alternates: {
     canonical: 'https://www.emirdenizliotokiralama.com/kurumsal-filo-kiralama',
   },
   openGraph: {
-    title: 'Kurumsal Filo Kiralama | Denizli Emir Rent A Car',
-    description: 'Şirketiniz için sermayenizi bağlamadan akılcı filo yönetimi. Yüksek vergi avantajı, ücretsiz bakım ve 7/24 yol yardımı ile operasyonel kiralama fırsatları.',
+    title: 'Kurumsal Filo Kiralama | Emir Rent A Car',
+    description: 'Şirketiniz için sermayenizi bağlamadan akılcı filo yönetimi. Vergi avantajı, ücretsiz bakım ve yol yardımı ile operasyonel kiralama fırsatları.',
     url: 'https://www.emirdenizliotokiralama.com/kurumsal-filo-kiralama',
   }
 };

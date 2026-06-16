@@ -20,7 +20,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${article.title} | Emir Rent A Car Bilgi Bankası`,
+    title: `${article.title} | Emir`,
     description: article.excerpt,
     alternates: {
       canonical: `/bilgibankasi/${resolvedParams.slug}`,
@@ -69,7 +69,7 @@ export default async function ArticlePage({ params }: Props) {
         {/* CTA Footer for Articles */}
         <div className="mt-16 bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col sm:flex-row items-center gap-6 justify-between">
           <div>
-            <h2 className="text-xl font-bold text-stone-900 mb-2">Denizli'de Araç Mı Kiralayacaksınız?</h2>
+            <div className="text-xl font-bold text-stone-900 mb-2">Denizli'de Araç Mı Kiralayacaksınız?</div>
             <p className="text-stone-600 font-medium">En uygun fiyatlar ve güvenilir filomuzla hemen rezervasyon yapın.</p>
           </div>
           <Link href="/araclar" className="px-8 py-4 bg-red-600 text-white font-bold rounded-2xl hover:bg-red-700 transition shrink-0">

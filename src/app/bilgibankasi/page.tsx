@@ -20,8 +20,11 @@ export default function BilgiBankasi() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight mb-4">
             Bilgi Bankası
           </h1>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto mb-8">
-            Araç kiralama süreçleri, yasal prosedürler ve ipuçları hakkında hazırladığımız uzman rehberimize göz atın.
+          <p className="text-lg text-stone-600 max-w-4xl mx-auto mb-6">
+            Araç kiralama süreçleri, yasal prosedürler ve ipuçları hakkında hazırladığımız uzman rehberimize göz atın. Denizli Emir Rent A Car olarak, müşterilerimizin kiralama deneyimini en şeffaf ve sorunsuz hale getirmeyi hedefliyoruz. Bu bilgi bankası, günlük veya uzun dönem kiralama yaparken dikkat etmeniz gereken kritik detaylardan, havalimanı araç teslimat prosedürlerine kadar her konuda size rehberlik etmek üzere hazırlanmıştır.
+          </p>
+          <p className="text-lg text-stone-600 max-w-4xl mx-auto mb-8">
+            Özellikle Denizli merkez, Çardak Havalimanı veya Pamukkale gibi turistik bölgelerde araç kiralayacak yerli ve yabancı misafirlerimiz için Yasal Rent A Car kaskosunun önemi, yakıt politikaları, araç teslim süreçleri ve yaş/ehliyet sınırları gibi konulardaki tüm sorularınızın cevaplarını bu makalelerde bulabilirsiniz. Güvenli, yasal ve ekonomik bir rent a car deneyimi için rehber içeriklerimizi okumanızı kesinlikle tavsiye ediyoruz.
           </p>
           <div className="flex justify-center">
              <div className="bg-stone-200/50 rounded-full flex items-center p-2 max-w-md w-full">

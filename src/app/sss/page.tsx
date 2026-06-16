@@ -82,8 +82,11 @@ export default function SSS() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight mb-4">
               Sıkça Sorulan Sorular
             </h1>
-            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              Emir Rent A Car&apos;dan araç kiralarken aklınıza takılabilecek tüm soruların yanıtlarını sizin için derledik.
+            <p className="text-lg text-stone-600 max-w-4xl mx-auto mb-6">
+              Emir Rent A Car'dan araç kiralarken aklınıza takılabilecek tüm soruların yanıtlarını sizin için derledik. Denizli oto kiralama sürecinin en şeffaf ve güvenilir markası olarak, müşterilerimizin hiçbir gizli şart veya sürpriz maliyetle karşılaşmasını istemiyoruz. İster günlük kiralama ister uzun dönem filo kiralama olsun, merak ettiğiniz tüm kiralama kuralları, provizyon (depozito) uygulamaları ve kasko detayları aşağıda yer almaktadır.
+            </p>
+            <p className="text-lg text-stone-600 max-w-4xl mx-auto">
+              Araç kiralama şartlarımız arasında ehliyet süresi ve yaş sınırları gibi temel kriterler bulunmakla birlikte, her müşterimizin sorunsuz bir hizmet alabilmesi için kiralama öncesi tüm detaylar yüz yüze de aktarılmaktadır. Çardak Havalimanı teslimatından, şehir dışı yolculuklara kadar tüm operasyonel sorularınızın en net cevaplarını Sıkça Sorulan Sorular bölümümüzde bulabilirsiniz. Aradığınız cevabı bulamazsanız, müşteri hizmetlerimiz size bir telefon kadar yakındır.
             </p>
           </div>
 
