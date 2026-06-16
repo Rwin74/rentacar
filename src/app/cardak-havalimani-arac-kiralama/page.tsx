@@ -106,7 +106,7 @@ export default function CardakHavalimaniAracKiralama() {
               Uyguladığımız kusursuz operasyon sayesinde, rezervasyonunuzu önceden oluşturduğunuz takdirde <em>uçaktan indikten sonra araç teslim</em> süreci yalnızca birkaç dakikanızı alır. Uzun formlar ve yorucu bürokratik işlemler yerine, hazır olan evraklarınızı imzalayarak anahtarınızı hemen teslim alabilirsiniz. <Link href="/" className="text-red-600 hover:underline">Ana sayfamızdan</Link> uçuş tarihinize göre araç sorgulaması yaparak vakit kaybetmeden planlamanızı tamamlayabilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli Havalimanı Rent A Car Sektöründeki Farkımız</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli Havalimanı Rent A Car Sektöründeki Farkımız</h3>
             <p>
               Bizi diğer firmalardan ayıran en önemli özelliklerimizden biri uçuş takibini titizlikle gerçekleştirmemizdir. <strong>Denizli havalimanı rent a car</strong> hizmeti sunan firmamız, uçuş kodunuz üzerinden uçağınızın durumunu canlı izler. Uçağınız erken inse de, saatlerce rötar yapsa da temsilcimiz çıkış kapısında isminizin yazılı olduğu bir tabela veya şirket forması ile sizi mutlaka karşılayacaktır.
             </p>
@@ -114,7 +114,7 @@ export default function CardakHavalimaniAracKiralama() {
               Havalimanından merkeze yaklaşık 45 dakikalık konforlu bir sürüş yapmanız gerekir. Filomuzda bulunan tüm kiralık araçlar, uzun ve kısa mesafeli yolculuklara uygun olarak periyodik bakımlardan geçirilmiştir. Güvenliğinizi asla şansa bırakmıyor; lastik, fren ve motor kontrolleri eksiksiz olan araçları tarafınıza yönlendiriyoruz. Dilerseniz <Link href="/araclar" className="text-red-600 hover:underline">araçlar sayfamızdan</Link> dilediğiniz segmentteki aracı detaylı olarak inceleyebilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Havalimanı Araç Teslimi Nasıl Gerçekleşiyor?</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Havalimanı Araç Teslimi Nasıl Gerçekleşiyor?</h3>
             <p>
               Müşteri deneyimini en üst seviyeye taşımak amacıyla <strong>havalimanı araç teslimi</strong> sürecini üç basit adıma indirgedik:
             </p>
@@ -124,14 +124,14 @@ export default function CardakHavalimaniAracKiralama() {
               <li><strong>Adım 3 - Teslimat:</strong> Kimlik ve ehliyet kontrollerinin ardından imzanızı atıp kiralama bedelini (önceden ödemediyseniz) tahsil ederek aracınızı otoparktan çıkartıp size teslim ediyoruz.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Araç İadesi ve Dönüş Yolculuğu</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Araç İadesi ve Dönüş Yolculuğu</h3>
             <p>
               Kiralama süreniz bittiğinde ve artık dönüş yolculuğu vakti geldiğinde de aynı kolaylığı sağlıyoruz. Çardak Havalimanı'na gelerek Giden Yolcu kapısı önünde veya belirtilen havalimanı otoparkında aracımızı yetkili personellerimize teslim edebilirsiniz. Hasar ve yakıt kontrolünün hızla tamamlanmasının ardından check-in bankolarına yönelerek evinize huzurla dönebilirsiniz. Gerek teslim alırken gerekse iade ederken işlemlerinizi en kısa sürede halletmeniz için buradayız.
             </p>
           </article>
 
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Uçağım rötar yaparsa ne olur?</h3>

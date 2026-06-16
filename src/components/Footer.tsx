@@ -59,7 +59,7 @@ export default function Footer() {
                 <a 
                   href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
                 >
                   WhatsApp&apos;tan Yazın
@@ -85,7 +85,7 @@ export default function Footer() {
             <a 
               href="https://www.google.com/maps/dir/?api=1&destination=15+Mayıs,+Atatürk+Cd.+No:31,+20150+Pamukkale/Denizli"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="flex items-center justify-center w-full py-2.5 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition gap-2"
             >
               <svg fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
@@ -99,11 +99,11 @@ export default function Footer() {
         <p>&copy; {new Date().getFullYear()} Emir Rent A Car, Denizli. Tüm Hakları Saklıdır.</p>
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-stone-400">
           <p>
-            Tasarım ve Altyapı: <a href="https://atakanyagli.com" target="_blank" rel="noopener noreferrer" className="text-stone-300 font-medium hover:text-white transition">Atakan Yağlı</a>
+            Tasarım ve Altyapı: <a href="https://atakanyagli.com" target="_blank" rel="nofollow noopener noreferrer" className="text-stone-300 font-medium hover:text-white transition">Atakan Yağlı</a>
           </p>
           <span className="hidden sm:inline text-stone-700">|</span>
           <p>
-            SEO ve Büyüme Stratejisi: <a href="https://atakanyagli.com" target="_blank" rel="noopener noreferrer" className="text-stone-300 font-medium hover:text-white transition">Atakan Yağlı</a>
+            SEO ve Büyüme Stratejisi: <a href="https://atakanyagli.com" target="_blank" rel="nofollow noopener noreferrer" className="text-stone-300 font-medium hover:text-white transition">Atakan Yağlı</a>
           </p>
         </div>
       </div>

@@ -106,7 +106,7 @@ export default function DenizliAracKiralama() {
               Emir Rent A Car olarak fiyat-performans dengesini en iyi şekilde kurduğumuz ekonomik segment araçlarımızla bütçenizi yormadan konforlu bir sürüş vaat ediyoruz. Ayrıca <Link href="/" className="text-red-600 hover:underline">ana sayfa</Link> üzerinden yapılan rezervasyonlarda dönemsel kampanyalar ve indirimlerle misafirlerimize sürpriz avantajlar sunmaktayız.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Geniş Araç Filosu ile Esnek Seçenekler</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Geniş Araç Filosu ile Esnek Seçenekler</h3>
             <p>
               Müşterilerimizin talepleri günden güne değişmekte ve çeşitlenmektedir. Şehir içinde dar sokaklarda rahatça park edebileceğiniz küçük hatchback araçlardan, dağlık ve kırsal alanlara yapacağınız seyahatler için güçlü motora sahip SUV'lere kadar oldukça geniş bir ürün yelpazesi sunuyoruz.
             </p>
@@ -114,7 +114,7 @@ export default function DenizliAracKiralama() {
               Ayrıca kalabalık aile grupları veya iş arkadaşlarınızla yapacağınız bayi toplantıları için 9 kişilik özel minibüslerimiz, yolculuğu eğlenceli ve ekonomik hale getiriyor. <Link href="/araclar" className="text-red-600 hover:underline">Tüm araçlarımızı detaylı inceleyerek</Link>, bagaj hacmi, yakıt türü ve vites seçeneğine göre filtreleme yapabilir, tam da ihtiyacınız olan aracı kolaylıkla rezerve edebilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Müşteri Odaklı Hizmet Anlayışı</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Müşteri Odaklı Hizmet Anlayışı</h3>
             <p>
               Bizim için en büyük reklam, mutlu ayrılan bir müşterinin tavsiyesidir. Bu bilinçle, araç kiralama süreçlerindeki tüm bürokratik engelleri ortadan kaldırarak işlemleri dakikalar içinde tamamlamanızı sağlıyoruz. Evrak yoğunluğunda boğulmadan, hızlıca anahtar teslimine geçilir.
             </p>
@@ -122,7 +122,7 @@ export default function DenizliAracKiralama() {
               Tatilinize veya iş görüşmenize bir an evvel başlamanızı önemsiyoruz. Denizli oto kiralama işlemlerinde güveni tesis etmek amacıyla sözleşme öncesinde aracın etrafında yapılan kontroller, şeffaflıkla kayıt altına alınır. Sizlere kusursuz temizlenmiş, deposu dolu veya belirlenen seviyede teslim edilen araçlarımızla sorunsuz bir başlangıç yaşatıyoruz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Online Rezervasyon Kolaylığı</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Online Rezervasyon Kolaylığı</h3>
             <p>
               Gelişen teknolojiyi hizmet süreçlerimize entegre ederek, web sitemiz veya WhatsApp destek hattımız üzerinden sadece birkaç tıklama ile rezervasyon yapabilme ayrıcalığı tanıyoruz. Sistemimiz üzerinden seçtiğiniz tarih aralığını belirterek müsait araçları anında görüntüleyebilir, kredi kartsız ön rezervasyon imkanından yararlanabilirsiniz.
             </p>
@@ -132,7 +132,7 @@ export default function DenizliAracKiralama() {
           </article>
 
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Araç teslim alırken hangi evraklar gerekiyor?</h3>

@@ -106,7 +106,7 @@ export default function PamukkaleAracKiralama() {
               <Link href="/denizli-rent-a-car" className="text-red-600 hover:underline">Denizli rent a car</Link> altyapımız, tam da bu tür serbest rotalar çizen misafirlerimizin işini kolaylaştırmak için tasarlanmıştır. Tur paketlerinin sınırlı zaman ve rotalarına sıkışmak yerine, kendi tatilinizin şoförü olarak anın tadını tam anlamıyla çıkarabilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Seyahate Uygun Araç Seçenekleri</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Seyahate Uygun Araç Seçenekleri</h3>
             <p>
               Emir Rent A Car olarak tek başınıza yapacağınız bir keşif turundan, geniş aile tatillerine kadar her konsepte uygun araçlar bulunduruyoruz. Eğer amacınız sadece otel ve ören yerleri arasında mekik dokumaksa şehir içi trafiğinde pratik kullanım sunan hatchback veya B segment sedan araçlarımız tam size göredir.
             </p>
@@ -114,19 +114,19 @@ export default function PamukkaleAracKiralama() {
               Kalabalık bir ekip, valiz fazlalığı olan gruplar veya daha konforlu bir yolculuk talep eden VIP misafirlerimiz için üst segment SUV'ler ve minibüsler devreye girmektedir. Hangi aracı seçeceğinize henüz karar vermediyseniz, detaylı özelliklerin yer aldığı <Link href="/araclar" className="text-red-600 hover:underline">araçlarımız sayfasından</Link> tüm filomuzu inceleyebilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Otelinize Kadar Vale Teslimatı</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Otelinize Kadar Vale Teslimatı</h3>
             <p>
               Pamukkale tatiliniz boyunca şubeye gelerek vakit kaybetmenizi istemiyoruz. Otelinizin resepsiyonuna veya bulunduğunuz noktaya, kiraladığınız aracı önceden dezenfekte edilmiş ve teslimata hazır bir biçimde yönlendiriyoruz. Ulaşımı hava yoluyla sağlayan misafirlerimiz içinse <Link href="/cardak-havalimani-arac-kiralama" className="text-red-600 hover:underline">Çardak havalimanı teslim</Link> hizmetimiz sayesinde ulaşım sorunu en başından kökten çözülmektedir.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Tam Güvence ve Şeffaf Fiyatlar</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Tam Güvence ve Şeffaf Fiyatlar</h3>
             <p>
               Kurumsal bir anlayışla sunduğumuz araç kiralama süreçlerinde en büyük sözümüz "sürprizsiz bir deneyim"dir. Yasal rent a car kaskolu araçlarımızla yolculuğunuza çıkarken, araçta oluşabilecek teknik sorunlarda veya kaza durumlarında tam destek sağlıyoruz. Size sadece Pamukkale'nin beyaz dokusunda harika anılar biriktirmek ve tatilinizin keyfini çıkarmak kalıyor. <Link href="/" className="text-red-600 hover:underline">Ana sayfamızdan</Link> veya iletişim numaralarımızdan hemen uygun fiyat tekliflerimizi alabilirsiniz.
             </p>
           </article>
 
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Pamukkale'de araç kiralama ofisiniz var mı?</h3>

@@ -106,7 +106,7 @@ export default function MerkezefendiAracKiralama() {
               <Link href="/denizli-rent-a-car" className="text-red-600 hover:underline">Denizli rent a car</Link> ihtiyaçlarınıza anında cevap veren uzman kadromuz, sözleşme evraklarının hızlıca hazırlanmasını sağlayarak sizi bürokratik engellerden kurtarır. İhtiyaç duymanız halinde, aracınızın teslimatı doğrudan ev adresinize veya iş yerinize de yönlendirilebilmektedir.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Kullanıma Uygun Zengin Filo</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Kullanıma Uygun Zengin Filo</h3>
             <p>
               Şehir içi kullanımda park kolaylığı sağlayan ekonomik ve küçük sınıf araçlar en çok tercih edilenler arasındadır. Düşük yakıt tüketimine sahip, otomatik vites rahatlığı sunan bu araçlarla Merkezefendi'nin işlek caddelerinde kolayca dolaşabilirsiniz. Daha prestijli görüşmeleriniz veya aile gezileriniz için ise lüks sedan ve SUV modellerimiz hizmetinizdedir.
             </p>
@@ -114,7 +114,7 @@ export default function MerkezefendiAracKiralama() {
               Kararsız kaldıysanız <Link href="/araclar" className="text-red-600 hover:underline">araçlarımız</Link> sayfasını ziyaret ederek bütçenize, yolcu kapasitesine ve yakıt türüne göre filtreleme yapabilir; size en uygun aracı hemen rezerve edebilirsiniz. Tüm araçlarımız düzenli bakımlara ve dezenfeksiyon işlemlerine tabi tutularak, tertemiz bir şekilde teslim edilmektedir.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Güvenli, Şeffaf ve Sorunsuz Kiralamalar</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Güvenli, Şeffaf ve Sorunsuz Kiralamalar</h3>
             <p>
               Firmamız, müşteri güvenini her şeyin üzerinde tutan kurumsal bir politika benimsemiştir. Sözleşmelerimizde gizli maddeler, sürpriz ücretler veya sonradan ortaya çıkan maliyetler yer almaz. Fiyatlarımızı kiralama işleminin başında net bir şekilde görür ve onaylarsınız. 
             </p>
@@ -124,7 +124,7 @@ export default function MerkezefendiAracKiralama() {
           </article>
 
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Merkezefendi ofisiniz nerede bulunuyor?</h3>

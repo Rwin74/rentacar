@@ -27,7 +27,7 @@ export default function Navbar() {
         <a 
           href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." 
           target="_blank" 
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="flex items-center justify-center px-5 py-2.5 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition"
         >
           Bize Ulaşın

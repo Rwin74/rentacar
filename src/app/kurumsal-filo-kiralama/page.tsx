@@ -65,7 +65,7 @@ export default function KurumsalFilo() {
              <a 
                 href="https://wa.me/905543950404?text=Merhaba, şirketimiz için uzun dönem filo kiralama şartlarınız ve teklifleriniz hakkında detaylı görüşmek istiyorum." 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="px-8 py-4 bg-red-600 text-white font-bold rounded-2xl hover:bg-red-700 transition shadow-xl shadow-red-600/20"
              >
                 Teklif İste
@@ -103,7 +103,7 @@ export default function KurumsalFilo() {
       {/* CTA Section */}
       <section className="bg-stone-900 text-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Şirketinize Özel Fiyatlandırmalar İçin Görüşelim</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-6">Şirketinize Özel Fiyatlandırmalar İçin Görüşelim</h3>
           <p className="text-stone-400 mb-10 leading-relaxed">
             Hemen kurumsal müşteri temsilcimiz ile iletişime geçin, işletmenizin büyüklüğüne ve aylık kullanım yoğunluğunuza en uygun filo kiralama taahhüdünü birlikte tasarlayalım.
           </p>

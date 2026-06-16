@@ -106,7 +106,7 @@ export default function DenizliRentACar() {
               Filomuzda her ihtiyaca yönelik çözümler bulunmaktadır. Düşük yakıt tüketimiyle dikkat çeken ekonomik sınıf araçlar, kalabalık aileler için geniş iç hacimli SUV ve minibüsler, prestij arayanlar için lüks segment otomobiller ile Denizli oto kiralama süreçlerinizi ayrıcalıklı hale getiriyoruz. Kiraladığınız araçla sadece bir noktadan diğerine gitmekle kalmaz, sürüş keyfini doyasıya yaşarsınız.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Günlük ve Aylık Araç Kiralama Seçenekleri</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Günlük ve Aylık Araç Kiralama Seçenekleri</h3>
             <p>
               İhtiyaçlarınıza özel esnek kiralama paketlerimiz bulunmaktadır. Hafta sonu kaçamakları veya kısa süreli iş toplantılarınız için günlük araç kiralama Denizli bölgesinde en çok tercih edilen opsiyonlardan biridir. Günlük kiralama hizmetimizde aracı dilediğiniz gün sayısınca kullanabilir, gereksinimleriniz doğrultusunda süreyi esnetebilirsiniz.
             </p>
@@ -114,7 +114,7 @@ export default function DenizliRentACar() {
               Uzun soluklu projeler, geçici personel görevlendirmeleri veya tatil programları için ise aylık araç kiralama Denizli paketlerimiz devreye girmektedir. Aylık kiralama sayesinde periyodik bakım, sigorta, kasko ve vergi gibi masraflardan kurtularak yalnızca yakıtınızı koyar ve işinize odaklanırsınız. Fiyat/performans açısından aylık kiralama, günlük kiralama maliyetlerine göre ciddi oranlarda avantaj sağlamaktadır.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Havalimanı Teslim Araç Kiralama</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Havalimanı Teslim Araç Kiralama</h3>
             <p>
               Uçak yolculuğunuzun ardından yorgunluğunuzu hissetmeden ulaşım problemini çözmenin en akılcı yolu Çardak havalimanı araç kiralama hizmetimizden yararlanmaktır. Rezervasyon aşamasında bildireceğiniz uçuş kodu (PNR) ile uçuşunuz anlık olarak takip edilir.
             </p>
@@ -122,7 +122,7 @@ export default function DenizliRentACar() {
               Uçağınız rötar yapsa dahi, ekibimiz havalimanı terminal çıkışında sizi beklemeye devam eder. Böylelikle taksi veya toplu taşıma bekleyerek vakit kaybetmez, bagajlarınızı kiraladığınız aracın geniş bagajına yerleştirerek direkt olarak rotanıza doğru yola çıkabilirsiniz. Uçaktan inip direksiyona geçmeniz arasındaki süre sadece birkaç dakikadan ibarettir.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Emir Rent A Car Araç Filosu</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Emir Rent A Car Araç Filosu</h3>
             <p>
               Denizli araç kiralama şirketleri arasında filomuzun çeşitliliği ve yeniliği ile ön plana çıkıyoruz. Gerek düz vites gerek otomatik vites seçenekleriyle, benzinli veya dizel motor tipleriyle her türlü sürüş alışkanlığına cevap veriyoruz. Yeni model araçlarımız teknolojik donanımlara sahip olup; Bluetooth bağlantısı, Apple CarPlay, geri görüş kamerası, hız sabitleyici gibi uzun yolculukları keyifli hale getirecek özelliklerle donatılmıştır.
             </p>
@@ -130,7 +130,7 @@ export default function DenizliRentACar() {
               Her aracımız kiralama işlemi sonrasında detaylı bir iç ve dış temizlik işleminden geçirilir. Hijyen standartlarımız gereği araç içi dezenfeksiyon düzenli olarak sağlanmaktadır. Aynı zamanda mevsim koşullarına uygun lastik (kış lastiği vb.) kullanımı da önceliğimizdir, böylece sürüş güvenliğiniz her zaman maksimize edilir.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Neden Emir Rent A Car?</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Neden Emir Rent A Car?</h3>
             <p>
               Müşteri memnuniyetini her zaman ön planda tutan firmamız, sektörde şeffaflık ilkesiyle hareket eder. Gizli ücretlendirmelerden, sonradan ortaya çıkan ekstra maliyetlerden tamamen uzak, sözleşmede ne yazıyorsa onu ödeyeceğiniz bir sistemle çalışıyoruz. Şirketlere özel faturalandırma (KDV indirimi sağlama) avantajı ile kurumsal taleplere de profesyonel çözümler üretiyoruz.
             </p>
@@ -141,7 +141,7 @@ export default function DenizliRentACar() {
 
           {/* FAQ Section */}
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Denizli rent a car için yaş sınırı nedir?</h3>

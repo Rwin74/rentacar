@@ -154,7 +154,7 @@ export default function Home() {
         {/* SEO - Hizmet Bölgelerimiz */}
         <section className="bg-white py-16 border-t border-stone-200">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center tracking-tight">Öne Çıkan Hizmetlerimiz</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center tracking-tight">Öne Çıkan Hizmetlerimiz</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/denizli-rent-a-car" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Denizli Rent A Car</Link>
               <Link href="/denizli-arac-kiralama" className="px-6 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-700 font-medium hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">Denizli Araç Kiralama</Link>

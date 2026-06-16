@@ -111,7 +111,7 @@ export default function SSS() {
             <p className="text-red-700 mb-6">Müşteri hizmetlerimiz 7/24 size yardımcı olmaktan memnuniyet duyar.</p>
             <a  
               href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20sorularım%20vardı." 
-              target="_blank" rel="noopener noreferrer"
+              target="_blank" rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition shadow-lg shadow-red-600/30"
             >
               WhatsApp&apos;tan Sorun

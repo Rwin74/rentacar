@@ -55,7 +55,7 @@ export default function Araclar() {
                 </Link>
               </div>
               
-              <h2 className="text-2xl font-bold text-stone-900 mb-1">{car.model}</h2>
+              <h3 className="text-2xl font-bold text-stone-900 mb-1">{car.model}</h3>
               <div className="text-red-600 font-bold text-xl mb-4">{car.price} {car.price !== "Fiyat Sorunuz" && <span className="text-sm font-normal text-stone-500">/ Günlük</span>}</div>
               
               <div className="flex flex-wrap gap-2 mb-8">

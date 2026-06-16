@@ -51,7 +51,7 @@ export default function BilgiBankasi() {
                    <p className="text-sm font-semibold text-red-600 tracking-widest uppercase">Rehber</p>
                  </div>
               </div>
-              <h2 className="text-2xl font-bold text-stone-900 mb-4 tracking-tight">{article.title}</h2>
+              <h3 className="text-2xl font-bold text-stone-900 mb-4 tracking-tight">{article.title}</h3>
               <p className="text-stone-600 leading-relaxed mb-8 flex-grow">
                 {article.excerpt}
               </p>

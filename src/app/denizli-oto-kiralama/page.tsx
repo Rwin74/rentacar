@@ -106,7 +106,7 @@ export default function DenizliOtoKiralama() {
               Amacımız yalnızca kâr odaklı bir kiralama işlemi değil, uzun yıllar sürecek kalıcı bir müşteri ilişkisi inşa etmektir. <Link href="/" className="text-red-600 hover:underline">Ana sayfada</Link> yer alan araç filomuz ve fiyatlarımız hakkında dilediğiniz her an destek hattımızdan ayrıntılı bilgi talep edebilirsiniz.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Bütçeye Uygun Zengin Seçenekler</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Bütçeye Uygun Zengin Seçenekler</h3>
             <p>
               İster kısıtlı bir bütçeyle günübirlik seyahat planlıyor olun, isterseniz misafirlerinizi prestijli bir araçla karşılamak isteyin; beklentinize uygun bir seçeneği filomuzda bulmanız mümkündür. 
               Denizli oto kiralama süreçlerimizde en önemli prensibimiz, tüm müşterilerimize eşit derecede özen göstererek temiz ve sorunsuz araçlar teslim etmektir.
@@ -115,7 +115,7 @@ export default function DenizliOtoKiralama() {
               Yaz sezonu veya tatil dönemlerinde yoğunlaşan talepleri başarıyla karşılayabilmek adına filomuzu sürekli genişletiyoruz. Yeni model araçlarımız yakıt cimrisi teknolojilere, düşük emisyon değerlerine ve ergonomik iç tasarımlara sahiptir. <Link href="/araclar" className="text-red-600 hover:underline">Araçlarımız</Link> düzenli periyotlarla yenilenerek yaş ortalaması daima düşük tutulur.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Kesintisiz Yolculuk Deneyimi</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Kesintisiz Yolculuk Deneyimi</h3>
             <p>
               Seyahatlerin bölünmemesi ve zaman kaybının yaşanmaması adına gerekli tüm önlemleri alıyoruz. Araç kiralarken özellikle dikkat edilmesi gereken konu, aracın yolda kalma ihtimaline karşı alınmış önlemlerdir. Bizler her aracımızın yağ, su ve filtre değişimlerini orijinal parçalar kullanarak aksatmadan gerçekleştiriyoruz.
             </p>
@@ -123,7 +123,7 @@ export default function DenizliOtoKiralama() {
               Şehirler arası uzun yolculuklarda güvenliği artırmak için araçlarımızda yedek lastik (stepne), ilkyardım çantası ve yangın söndürme tüpü standart olarak bulunmaktadır. Güvenlik, Denizli oto kiralama felsefemizin temel taşını oluşturur.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Rezervasyon ve Teslimat Süreçleri</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Rezervasyon ve Teslimat Süreçleri</h3>
             <p>
               Teknolojiyi en efektif şekilde kullanarak karmaşık bürokratik engelleri aştık. Online rezervasyon platformumuz veya WhatsApp iletişim hattımızdan sadece dakikalar içinde kiralama yapabilirsiniz. Fiyat teklifinizi şeffaf bir şekilde alır, sürpriz ek ücretlerle kesinlikle karşılaşmazsınız.
             </p>
@@ -133,7 +133,7 @@ export default function DenizliOtoKiralama() {
           </article>
 
           <section className="mt-20 border-t border-stone-200 pt-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Araç arıza yaparsa ne olur?</h3>
