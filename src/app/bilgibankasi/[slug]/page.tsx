@@ -60,10 +60,10 @@ export default async function ArticlePage({ params }: Props) {
             {article.title}
           </h1>
 
-          <div className="prose prose-stone lg:prose-lg max-w-none text-stone-600 mb-12">
+          <div className="prose prose-stone lg:prose-lg max-w-none text-stone-800 mb-12">
             <h2 className="sr-only">{article.title} Detayları</h2>
             {article.content.map((paragraph, index) => (
-              <p key={index} className="mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: paragraph }}></p>
+              <p key={index} className="text-stone-800 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: paragraph }}></p>
             ))}
           </div>
         </article>

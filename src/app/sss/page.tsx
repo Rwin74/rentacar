@@ -82,10 +82,10 @@ export default function SSS() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight mb-4">
               Sıkça Sorulan Sorular
             </h1>
-            <p className="text-lg text-stone-600 max-w-4xl mx-auto mb-6">
+            <p className="text-lg text-stone-800 max-w-4xl mx-auto mb-6">
               Emir Rent A Car'dan araç kiralarken aklınıza takılabilecek tüm soruların yanıtlarını sizin için derledik. Denizli oto kiralama sürecinin en şeffaf ve güvenilir markası olarak, müşterilerimizin hiçbir gizli şart veya sürpriz maliyetle karşılaşmasını istemiyoruz. İster günlük kiralama ister uzun dönem filo kiralama olsun, merak ettiğiniz tüm kiralama kuralları, provizyon (depozito) uygulamaları ve kasko detayları aşağıda yer almaktadır.
             </p>
-            <p className="text-lg text-stone-600 max-w-4xl mx-auto">
+            <p className="text-lg text-stone-800 max-w-4xl mx-auto">
               Araç kiralama şartlarımız arasında ehliyet süresi ve yaş sınırları gibi temel kriterler bulunmakla birlikte, her müşterimizin sorunsuz bir hizmet alabilmesi için kiralama öncesi tüm detaylar yüz yüze de aktarılmaktadır. Çardak Havalimanı teslimatından, şehir dışı yolculuklara kadar tüm operasyonel sorularınızın en net cevaplarını Sıkça Sorulan Sorular bölümümüzde bulabilirsiniz. Aradığınız cevabı bulamazsanız, müşteri hizmetlerimiz size bir telefon kadar yakındır.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function SSS() {
                     <svg fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                   </span>
                 </summary>
-                <div className="p-6 pt-2 text-stone-600 leading-relaxed border-t border-stone-100">
+                <div className="p-6 pt-2 text-stone-800 leading-relaxed border-t border-stone-100">
                   {faq.a}
                 </div>
               </details>

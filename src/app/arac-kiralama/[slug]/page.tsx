@@ -256,16 +256,16 @@ export default async function CarDetailPage({ params }: Props) {
                   if (idx === 3) return (
                     <React.Fragment key={idx}>
                       <h3 className="text-2xl font-bold mt-8 mb-4">{car.model} ile Seyahat Avantajları</h3>
-                      <p>{paragraph}</p>
+                      <p className="text-stone-800 leading-relaxed mb-6">{paragraph}</p>
                     </React.Fragment>
                   );
                   if (idx === 6) return (
                     <React.Fragment key={idx}>
                       <h3 className="text-2xl font-bold mt-8 mb-4">Neden Emir Rent A Car'ı Tercih Etmelisiniz?</h3>
-                      <p>{paragraph}</p>
+                      <p className="text-stone-800 leading-relaxed mb-6">{paragraph}</p>
                     </React.Fragment>
                   );
-                  return <p key={idx} className="mb-6">{paragraph}</p>;
+                  return <p key={idx} className="text-stone-800 leading-relaxed mb-6">{paragraph}</p>;
                 })}
               </div>
 
