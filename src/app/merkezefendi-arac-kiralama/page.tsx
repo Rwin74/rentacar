@@ -1,152 +1,160 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import FAQAccordion from '@/components/FAQAccordion';
+import { RelatedCars, RelatedServices, RelatedBlogs } from '@/components/RelatedSections';
 
 export const metadata: Metadata = {
-  title: 'Merkezefendi Araç Kiralama | Emir Rent A Car',
-  description: 'Merkezefendi araç kiralama hizmetiyle Denizli merkezde ekonomik, güvenilir ve bakımlı araç kiralama seçenekleri.',
+  title: 'Merkezefendi Araç Kiralama | Emir Rent A Car Denizli',
+  description: 'Denizli Merkezefendi araç kiralama ofisimizle size bir adım daha yakınız. Kapınıza teslim kiralık otomobil ayrıcalığını yaşayın.',
   alternates: {
-    canonical: 'https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama',
-  },
-  openGraph: {
-    title: 'Merkezefendi Araç Kiralama | Emir Rent A Car',
-    description: 'Merkezefendi araç kiralama hizmetiyle Denizli merkezde ekonomik, güvenilir ve bakımlı araç kiralama seçenekleri.',
-    url: 'https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama',
+    canonical: '/merkezefendi-arac-kiralama',
   }
 };
 
-export default function MerkezefendiAracKiralama() {
-  const schemaFAQ = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Merkezefendi ofisiniz nerede bulunuyor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Merkez ofisimiz Denizli'nin kalbi sayılan 15 Mayıs Mahallesi'nde yer almaktadır. Merkezefendi içerisindeki her adrese çok kısa sürede ulaşım sağlayabilmekteyiz."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Araç kiralarken kredi kartı zorunlu mu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Evet, tüm kurumsal rent a car firmalarında olduğu gibi güvence bedeli (bloke) işlemi için kiracının kendi adına kayıtlı bir kredi kartı ibraz etmesi zorunludur."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Aracı farklı bir ilçede iade edebilir miyim?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Araç iade işleminizi önceden bildirmek kaydıyla Havalimanı dahil Denizli'nin birçok noktasında, belirlenen teslimat ücretleri (drop fee) dahilinde yapabilirsiniz."
-        }
+export default function ServicePage() {
+  const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "AutoRental"
+  ],
+  "name": "Emir Rent A Car",
+  "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+  "@id": "https://www.emirdenizliotokiralama.com",
+  "url": "https://www.emirdenizliotokiralama.com",
+  "telephone": "+905543950404",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Altıntop Mah. 834 Sok. No:1",
+    "addressLocality": "Merkezefendi",
+    "addressRegion": "Denizli",
+    "postalCode": "20100",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.7816,
+    "longitude": 29.0831
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "23:59"
+  }
+};
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Merkezefendi içi adrese teslim var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, Merkezefendi ilçe sınırları içerisinde ev veya iş yerinize kadar kiralık aracınızı teslim ediyor ve geri alıyoruz."
       }
-    ]
-  };
-
-  const schemaLocalBusiness = {
-    "@context": "https://schema.org",
-    "@type": "AutoRental",
-    "name": "Emir Rent A Car",
-    "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
-    "url": "https://www.emirdenizliotokiralama.com",
-    "telephone": "+905543950404",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 Mayıs Mahallesi Atatürk Caddesi No:31 Adım Apartmanı",
-      "addressLocality": "Merkez",
-      "addressRegion": "Denizli",
-      "addressCountry": "TR"
+    },
+    {
+      "@type": "Question",
+      "name": "Kiralama için yaş ve ehliyet sınırı nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En az 21 yaşında olmanız ve minimum 2 yıllık geçerli B sınıfı ehliyetinizin olması gerekmektedir."
+      }
     }
-  };
-
-  const schemaBreadcrumb = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Ana Sayfa",
-        "item": "https://www.emirdenizliotokiralama.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Merkezefendi Araç Kiralama",
-        "item": "https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama"
-      }
-    ]
-  };
+  ]
+};
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://www.emirdenizliotokiralama.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Merkezefendi Araç Kiralama | Emir Rent A Car Denizli",
+      "item": "https://www.emirdenizliotokiralama.com/merkezefendi-arac-kiralama"
+    }
+  ]
+};
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
-      <main className="flex-1 w-full bg-stone-50 py-16 lg:py-24">
+      <main className="flex-1 w-full bg-white py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <article className="prose prose-stone lg:prose-xl max-w-none text-stone-700">
-            <h1 className="text-4xl lg:text-5xl font-extrabold text-stone-900 mb-8 tracking-tight">
-              Merkezefendi Araç Kiralama
-            </h1>
-            
-            <p>
-              Denizli'nin en hareketli ve ticaret hacmi en yüksek ilçelerinden biri olan Merkezefendi, hem iş amaçlı ziyaretlerde hem de günlük yaşam dinamizminde sürekli bir mobilite gerektirir. Kalabalık şehir trafiğinde hızlı, konforlu ve güvenilir ulaşım sağlamak için <strong>Merkezefendi araç kiralama</strong> hizmetlerimizden yararlanarak gününüzün kontrolünü elinize alabilirsiniz.
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-stone-900 mb-8 tracking-tight">Merkezefendi Araç Kiralama Çözümleri</h1>
+          
+          <div className="prose prose-stone prose-lg max-w-none text-stone-600 space-y-6">
+            <p className="lead text-xl text-stone-800 font-medium">
+              Merkezefendi Araç Kiralama Çözümleri alanında Denizli'nin en güvenilir adresi Emir Rent A Car olarak, siz değerli misafirlerimize kesintisiz, güvenli ve ekonomik çözümler sunuyoruz. Yılların getirdiği sektör tecrübemiz ve genişleyen modern araç filomuzla yanınızdayız.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli Merkezde Kaliteli Oto Kiralama</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Neden Emir Rent A Car'ı Tercih Etmelisiniz?</h2>
             <p>
-              Emir Rent A Car olarak Denizli merkeze konumlanmış güçlü altyapımızla, Merkezefendi sınırları içerisinde talep ettiğiniz aracı çok kısa sürelerde hazır hale getiriyoruz. Merkez ofisimize yapacağınız ufak bir ziyaret veya <Link href="/" className="text-red-600 hover:underline">ana sayfamızdan</Link> gerçekleştireceğiniz online rezervasyon ile ulaşım probleminizi anında çözmekteyiz.
+              Gelişen ve büyüyen Denizli'nin ulaşım ihtiyaçları, esnek ve hızlı çözümleri zorunlu kılıyor. Şehre ister iş, ister gezi, ister aile ziyareti için gelin, doğru araç kiralama firmasını bulmak yolculuğunuzun kalitesini doğrudan etkileyecektir. Firmamız, %100 yasal rent a car kaskosu, periyodik bakımları eksiksiz yapılmış araçları ve 7/24 kesintisiz müşteri desteğiyle sektörde fark yaratmaktadır. 
             </p>
             <p>
-              <Link href="/denizli-rent-a-car" className="text-red-600 hover:underline">Denizli rent a car</Link> ihtiyaçlarınıza anında cevap veren uzman kadromuz, sözleşme evraklarının hızlıca hazırlanmasını sağlayarak sizi bürokratik engellerden kurtarır. İhtiyaç duymanız halinde, aracınızın teslimatı doğrudan ev adresinize veya iş yerinize de yönlendirilebilmektedir.
-            </p>
-
-            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Her Kullanıma Uygun Zengin Filo</h3>
-            <p>
-              Şehir içi kullanımda park kolaylığı sağlayan ekonomik ve küçük sınıf araçlar en çok tercih edilenler arasındadır. Düşük yakıt tüketimine sahip, otomatik vites rahatlığı sunan bu araçlarla Merkezefendi'nin işlek caddelerinde kolayca dolaşabilirsiniz. Daha prestijli görüşmeleriniz veya aile gezileriniz için ise lüks sedan ve SUV modellerimiz hizmetinizdedir.
-            </p>
-            <p>
-              Kararsız kaldıysanız <Link href="/araclar" className="text-red-600 hover:underline">araçlarımız</Link> sayfasını ziyaret ederek bütçenize, yolcu kapasitesine ve yakıt türüne göre filtreleme yapabilir; size en uygun aracı hemen rezerve edebilirsiniz. Tüm araçlarımız düzenli bakımlara ve dezenfeksiyon işlemlerine tabi tutularak, tertemiz bir şekilde teslim edilmektedir.
+              Müşteri memnuniyetini merkeze alan hizmet anlayışımızla, araç kiralama sürecindeki karmaşık evrak işlerini ve prosedürleri en aza indirgiyoruz. İnternet sitemiz üzerinden dakikalar içinde rezervasyon yapabilir veya <Link href="/araclar" className="text-red-600 font-semibold hover:underline">araç filomuz</Link> içinden bütçenize en uygun modeli seçerek hemen yola koyulabilirsiniz. Gizli ücretler, son dakika sürprizleri veya ekstra kesintilerle asla karşılaşmazsınız; fiyatlarımız tamamen şeffaftır.
             </p>
 
-            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Güvenli, Şeffaf ve Sorunsuz Kiralamalar</h3>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Filomuz ve Araç Seçenekleri</h2>
             <p>
-              Firmamız, müşteri güvenini her şeyin üzerinde tutan kurumsal bir politika benimsemiştir. Sözleşmelerimizde gizli maddeler, sürpriz ücretler veya sonradan ortaya çıkan maliyetler yer almaz. Fiyatlarımızı kiralama işleminin başında net bir şekilde görür ve onaylarsınız. 
+              Her bütçeye ve her ihtiyaca uygun geniş bir araç parkına sahibiz. Yakıt ekonomisi arayanlar için <Link href="/arac-kiralama/renault-clio-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Renault Clio</Link> veya <Link href="/arac-kiralama/hyundai-i20-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Hyundai i20</Link> gibi pratik B segmenti araçlarımız; uzun yolda yüksek bagaj hacmi arayan geniş aileler için <Link href="/arac-kiralama/fiat-egea-manuel-dizel" className="text-red-600 font-semibold hover:underline">Fiat Egea</Link> modellerimiz mevcuttur.
             </p>
             <p>
-              Bununla birlikte filomuzdaki tüm araçlar standart kasko değil, %100 oranında Yasal Rent A Car Kaskosu ile korunmaktadır. Aracınızın arıza yapması veya kaza durumunda yetkili teknik ekibimiz hızlıca müdahale eder, yolda kalmamanız adına yedek araç ile size destek olmaya devam ederiz. Dışarıdan veya hava yoluyla Denizli'ye gelecek konuklarınız için dilerseniz <Link href="/cardak-havalimani-arac-kiralama" className="text-red-600 hover:underline">Havalimanı araç kiralama</Link> paketlerimizden de faydalanabilirsiniz.
+              Lüks ve gösterişten ödün vermek istemeyen müşterilerimiz için <Link href="/arac-kiralama/peugeot-3008-otomatik-dizel" className="text-red-600 font-semibold hover:underline">Peugeot 3008</Link> ve <Link href="/arac-kiralama/vw-tiguan-otomatik-benzin" className="text-red-600 font-semibold hover:underline">VW Tiguan</Link> gibi donanımlı SUV araçlarımız; protokol, düğün veya VIP karşılama organizasyonları için <Link href="/arac-kiralama/mercedes-c200-amg-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Mercedes C200</Link> ve <Link href="/arac-kiralama/mercedes-vito-otomatik-dizel" className="text-red-600 font-semibold hover:underline">VIP Vito</Link> minibüslerimiz de filomuzda yer almaktadır. Hangi aracı seçerseniz seçin, üstün bir hijyen standardıyla ve full depoya yakın yakıtla size teslim edilir.
             </p>
-          </article>
 
-          <section className="mt-20 border-t border-stone-200 pt-16">
-            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Merkezefendi ofisiniz nerede bulunuyor?</h3>
-                <p className="text-stone-600">Merkez ofisimiz 15 Mayıs Mahallesi'nde merkezi bir konumda yer almaktadır. Merkezefendi ve Pamukkale bölgelerinden bize çok kolay bir şekilde ulaşabilirsiniz.</p>
-              </div>
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Araç kiralarken kredi kartı zorunlu mu?</h3>
-                <p className="text-stone-600">Evet, sektör standartları gereği trafik cezaları veya sonradan oluşabilecek küçük pürüzlere karşı provizyon (güvence bedeli blokesi) almak adına, aracı kiralayan kişinin kendi adına kayıtlı kredi kartı olması zorunludur.</p>
-              </div>
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Aracı farklı bir ilçede veya havalimanında iade edebilir miyim?</h3>
-                <p className="text-stone-600">Aracı kiralarken veya kiralama süresi içerisinde bize haber vermeniz durumunda, farklı bir lokasyonda (örneğin Çardak Havalimanı) aracın iade alınması mümkündür. Mesafe ve operasyon maliyetine göre ufak bir teslimat bedeli uygulanabilir.</p>
-              </div>
-            </div>
-          </section>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Şeffaf Sözleşme ve Tam Kapsamlı Güvenlik</h2>
+            <p>
+              Kiralama sözleşmelerimiz, tamamen Tüketici Hakları'na uygun, şeffaf ve anlaşılır maddelerden oluşmaktadır. Bireysel kiralama ve <Link href="/kurumsal-filo-kiralama" className="text-red-600 font-semibold hover:underline">Kurumsal Filo Kiralama</Link> taleplerinizde, aracı kiraladığınız günden teslim edeceğiniz güne kadar ne ödeyeceğinizi net olarak bilirsiniz. Araçlarımızdaki Yasal Rent A Car Kaskosu, olası trafik kazalarında sizin ve karşı tarafın masraflarını teminat altına alır. Çarpışma, hırsızlık veya doğal afet gibi istenmeyen durumlarda dahi hukuki ve maddi olarak koruma altındasınız.
+            </p>
+            <p>
+              Dahası, acil bir durumda ulaşabileceğiniz 7/24 açık destek hattımızla, çekici hizmetinden ikame araca kadar tüm süreçleri hızlıca organize ediyoruz. Tatilinizin veya iş seyahatinizin yarıda kalmaması için tüm operasyonel gücümüzü kullanıyoruz.
+            </p>
 
-          <div className="mt-16 text-center">
-             <Link href="/araclar" className="inline-flex px-8 py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition">
-                Şimdi Fiyat Al
-             </Link>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli'de Görülmesi Gereken Yerler</h2>
+            <p>
+              Aracınızı teslim aldıktan sonra Denizli'nin eşsiz güzelliklerini keşfetmek için harika bir yolculuk sizi bekliyor. <Link href="/pamukkale-arac-kiralama" className="text-red-600 font-semibold hover:underline">Pamukkale</Link> Travertenleri ve Hierapolis antik kenti, dünyada eşi benzeri olmayan bir doğa harikasıdır. Buradaki Kleopatra havuzunda yüzebilir, antik tiyatronun heybetine tanıklık edebilirsiniz. 
+            </p>
+            <p>
+              Şifalı kırmızı sularıyla ünlü Karahayıt bölgesi, özellikle kış turizmi ve sağlık turizmi için vazgeçilmezdir. Eğer doğa ile iç içe olmak isterseniz, Teleferik ile Bağbaşı Yaylası'na çıkabilir, çam ormanları arasında harika bir Ege kahvaltısı yapabilirsiniz. Daha fazla gezi rehberi ve ipucu için <Link href="/bilgibankasi" className="text-red-600 font-semibold hover:underline">Bilgi Bankası</Link> sayfamızdaki içeriklerimize mutlaka göz atmalısınız.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Nasıl Rezervasyon Yaparım?</h2>
+            <p>
+              Rezervasyon sürecimiz son derece basittir. İhtiyacınıza uygun aracı web sitemizden seçtikten sonra WhatsApp üzerinden veya doğrudan iletişim numaralarımızdan bizi arayarak saniyeler içinde adınıza rezerve edebilirsiniz. İster merkezdeki ofisimizden, ister <Link href="/cardak-havalimani-arac-kiralama" className="text-red-600 font-semibold hover:underline">Çardak Havalimanı</Link> terminalinden, isterseniz de otelinizden aracınızı teslim alma esnekliğine sahipsiniz. Emir Rent A Car, koşulsuz müşteri memnuniyeti ilkesiyle Denizli yollarındaki en iyi yol arkadaşınız olmaya devam edecektir.
+            </p>
           </div>
 
+          <FAQAccordion 
+            title="Merkezefendi Araç Kiralama Çözümleri Hakkında Sıkça Sorulan Sorular" 
+            faqs={[{"question":"Merkezefendi içi adrese teslim var mı?","answer":"Evet, Merkezefendi ilçe sınırları içerisinde ev veya iş yerinize kadar kiralık aracınızı teslim ediyor ve geri alıyoruz."},{"question":"Kiralama için yaş ve ehliyet sınırı nedir?","answer":"En az 21 yaşında olmanız ve minimum 2 yıllık geçerli B sınıfı ehliyetinizin olması gerekmektedir."}]} 
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 mt-16 border-t border-stone-200 pt-16">
+          <RelatedCars currentSlug="none" />
+          <RelatedServices currentSlug="merkezefendi-arac-kiralama" />
+          <RelatedBlogs currentSlug="none" />
         </div>
       </main>
     </>

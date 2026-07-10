@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { cars } from '@/data/cars';
 
 export const metadata: Metadata = {
-  title: 'Araçlarımız | Emir Rent A Car Denizli',
-  description: 'Denizli oto kiralama filomuzu inceleyin. Ekonomik, orta sınıf ve lüks (SUV) araç seçenekleri ile Emir Rent A Car hizmetinizde.',
+  title: 'Kiralık Araç Filosu & Fiyatları | Emir Rent A Car Denizli',
+  description: 'Denizli kiralık araç filomuzu ve fiyatlarımızı inceleyin. Ekonomik, SUV ve VIP kiralama seçenekleriyle yeni model araçlar Emir Rent A Car ayrıcalığıyla.',
   alternates: {
     canonical: '/araclar',
   },

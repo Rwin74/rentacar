@@ -1,159 +1,160 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import FAQAccordion from '@/components/FAQAccordion';
+import { RelatedCars, RelatedServices, RelatedBlogs } from '@/components/RelatedSections';
 
 export const metadata: Metadata = {
-  title: 'Çardak Havalimanı Araç Kiralama | Emir Rent A Car',
-  description: 'Çardak Havalimanı araç kiralama hizmetiyle uçağınızdan indikten sonra aracınızı hızlıca teslim alın. Emir Rent A Car Denizli.',
+  title: 'Denizli Çardak Havalimanı Araç Kiralama | 7/24 Teslimat',
+  description: 'Denizli Çardak Havalimanı rent a car hizmetimizle uçaktan iner inmez aracınız hazır. Hızlı teslimat, kesintisiz hizmet ve VIP seçenekler.',
   alternates: {
-    canonical: 'https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama',
-  },
-  openGraph: {
-    title: 'Çardak Havalimanı Araç Kiralama | Emir Rent A Car',
-    description: 'Çardak Havalimanı araç kiralama hizmetiyle uçağınızdan indikten sonra aracınızı hızlıca teslim alın. Emir Rent A Car Denizli.',
-    url: 'https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama',
+    canonical: '/cardak-havalimani-arac-kiralama',
   }
 };
 
-export default function CardakHavalimaniAracKiralama() {
-  const schemaFAQ = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Uçağım rötar yaparsa ne olur?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Rezervasyon esnasında uçuş numaranızı (PNR) aldığımız için uçağınızı anlık takip ediyoruz. Uçağınız ne kadar rötar yaparsa yapsın personelimiz sizi bekliyor olacaktır."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Havalimanı araç teslimi için ekstra ücret alınıyor mu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Denizli Çardak Havalimanı araç teslim süreçlerimiz için uygulanan fiyatlandırma, kiralama gün sayısına ve araç modeline göre değişebilir. Fiyatlarımızı teklif alırken şeffaf bir şekilde görebilirsiniz."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Aracı teslim ederken nereye bırakacağım?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dönüş uçuşunuzdan önce havalimanı Giden Yolcu otoparkında yetkili personelimizle buluşup aracı saniyeler içerisinde iade edebilirsiniz."
-        }
+export default function ServicePage() {
+  const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "AutoRental"
+  ],
+  "name": "Emir Rent A Car",
+  "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+  "@id": "https://www.emirdenizliotokiralama.com",
+  "url": "https://www.emirdenizliotokiralama.com",
+  "telephone": "+905543950404",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Altıntop Mah. 834 Sok. No:1",
+    "addressLocality": "Merkezefendi",
+    "addressRegion": "Denizli",
+    "postalCode": "20100",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.7816,
+    "longitude": 29.0831
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "23:59"
+  }
+};
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Havalimanında araç teslimi ücretli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belirli kiralama gün sayısının üzerindeki rezervasyonlarda Çardak Havalimanı teslimatları ücretsiz veya cüzi bir yol ücreti karşılığı yapılmaktadır."
       }
-    ]
-  };
-
-  const schemaLocalBusiness = {
-    "@context": "https://schema.org",
-    "@type": "AutoRental",
-    "name": "Emir Rent A Car",
-    "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
-    "url": "https://www.emirdenizliotokiralama.com",
-    "telephone": "+905543950404",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 Mayıs Mahallesi Atatürk Caddesi No:31 Adım Apartmanı",
-      "addressLocality": "Merkez",
-      "addressRegion": "Denizli",
-      "addressCountry": "TR"
+    },
+    {
+      "@type": "Question",
+      "name": "Uçağım gece inerse aracı alabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, 7/24 operasyonumuz sayesinde uçağınızın saati ne olursa olsun personelimiz aracınızı havalimanında teslim etmektedir."
+      }
     }
-  };
-
-  const schemaBreadcrumb = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Ana Sayfa",
-        "item": "https://www.emirdenizliotokiralama.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Çardak Havalimanı Araç Kiralama",
-        "item": "https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama"
-      }
-    ]
-  };
+  ]
+};
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://www.emirdenizliotokiralama.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Denizli Çardak Havalimanı Araç Kiralama | 7/24 Teslimat",
+      "item": "https://www.emirdenizliotokiralama.com/cardak-havalimani-arac-kiralama"
+    }
+  ]
+};
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
-      <main className="flex-1 w-full bg-stone-50 py-16 lg:py-24">
+      <main className="flex-1 w-full bg-white py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <article className="prose prose-stone lg:prose-xl max-w-none text-stone-700">
-            <h1 className="text-4xl lg:text-5xl font-extrabold text-stone-900 mb-8 tracking-tight">
-              Çardak Havalimanı Araç Kiralama
-            </h1>
-            
-            <p>
-              İş gezisi, turizm seyahati veya memleket ziyareti... Amacınız ne olursa olsun, Denizli'ye hava yolu ile ulaşmayı tercih eden misafirlerimiz için en büyük ihtiyaç havalimanından şehir merkezine veya çevre ilçelere ulaşımın sağlanmasıdır. İşte bu noktada <strong>Çardak havalimanı araç kiralama</strong> hizmetimiz, otobüs veya taksi bekleme derdini ortadan kaldıran en pratik ve lüks çözüm olarak karşınıza çıkmaktadır.
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-stone-900 mb-8 tracking-tight">Çardak Havalimanı Araç Kiralama ve Transfer</h1>
+          
+          <div className="prose prose-stone prose-lg max-w-none text-stone-600 space-y-6">
+            <p className="lead text-xl text-stone-800 font-medium">
+              Çardak Havalimanı Araç Kiralama ve Transfer alanında Denizli'nin en güvenilir adresi Emir Rent A Car olarak, siz değerli misafirlerimize kesintisiz, güvenli ve ekonomik çözümler sunuyoruz. Yılların getirdiği sektör tecrübemiz ve genişleyen modern araç filomuzla yanınızdayız.
             </p>
 
-            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Uçaktan İndikten Sonra Araç Teslim Kolaylığı</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Neden Emir Rent A Car'ı Tercih Etmelisiniz?</h2>
             <p>
-              Uzun ve yorucu bir uçuşun ardından hiçbirimiz ağır valizlerle havalimanı dışında toplu taşıma araçları beklemek istemeyiz. İşleyişimizi tamamen misafirlerimizin konforu üzerine kurduk. <strong>Denizli Çardak Havalimanı</strong> terminaline iniş yaptığınız anda dışarı adım atar atmaz aracınızın hazır olması, seyahatinize stressiz bir başlangıç yapmanızı sağlar.
+              Gelişen ve büyüyen Denizli'nin ulaşım ihtiyaçları, esnek ve hızlı çözümleri zorunlu kılıyor. Şehre ister iş, ister gezi, ister aile ziyareti için gelin, doğru araç kiralama firmasını bulmak yolculuğunuzun kalitesini doğrudan etkileyecektir. Firmamız, %100 yasal rent a car kaskosu, periyodik bakımları eksiksiz yapılmış araçları ve 7/24 kesintisiz müşteri desteğiyle sektörde fark yaratmaktadır. 
             </p>
             <p>
-              Uyguladığımız kusursuz operasyon sayesinde, rezervasyonunuzu önceden oluşturduğunuz takdirde <em>uçaktan indikten sonra araç teslim</em> süreci yalnızca birkaç dakikanızı alır. Uzun formlar ve yorucu bürokratik işlemler yerine, hazır olan evraklarınızı imzalayarak anahtarınızı hemen teslim alabilirsiniz. <Link href="/" className="text-red-600 hover:underline">Ana sayfamızdan</Link> uçuş tarihinize göre araç sorgulaması yaparak vakit kaybetmeden planlamanızı tamamlayabilirsiniz.
-            </p>
-
-            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli Havalimanı Rent A Car Sektöründeki Farkımız</h3>
-            <p>
-              Bizi diğer firmalardan ayıran en önemli özelliklerimizden biri uçuş takibini titizlikle gerçekleştirmemizdir. <strong>Denizli havalimanı rent a car</strong> hizmeti sunan firmamız, uçuş kodunuz üzerinden uçağınızın durumunu canlı izler. Uçağınız erken inse de, saatlerce rötar yapsa da temsilcimiz çıkış kapısında isminizin yazılı olduğu bir tabela veya şirket forması ile sizi mutlaka karşılayacaktır.
-            </p>
-            <p>
-              Havalimanından merkeze yaklaşık 45 dakikalık konforlu bir sürüş yapmanız gerekir. Filomuzda bulunan tüm kiralık araçlar, uzun ve kısa mesafeli yolculuklara uygun olarak periyodik bakımlardan geçirilmiştir. Güvenliğinizi asla şansa bırakmıyor; lastik, fren ve motor kontrolleri eksiksiz olan araçları tarafınıza yönlendiriyoruz. Dilerseniz <Link href="/araclar" className="text-red-600 hover:underline">araçlar sayfamızdan</Link> dilediğiniz segmentteki aracı detaylı olarak inceleyebilirsiniz.
+              Müşteri memnuniyetini merkeze alan hizmet anlayışımızla, araç kiralama sürecindeki karmaşık evrak işlerini ve prosedürleri en aza indirgiyoruz. İnternet sitemiz üzerinden dakikalar içinde rezervasyon yapabilir veya <Link href="/araclar" className="text-red-600 font-semibold hover:underline">araç filomuz</Link> içinden bütçenize en uygun modeli seçerek hemen yola koyulabilirsiniz. Gizli ücretler, son dakika sürprizleri veya ekstra kesintilerle asla karşılaşmazsınız; fiyatlarımız tamamen şeffaftır.
             </p>
 
-            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Havalimanı Araç Teslimi Nasıl Gerçekleşiyor?</h3>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Filomuz ve Araç Seçenekleri</h2>
             <p>
-              Müşteri deneyimini en üst seviyeye taşımak amacıyla <strong>havalimanı araç teslimi</strong> sürecini üç basit adıma indirgedik:
+              Her bütçeye ve her ihtiyaca uygun geniş bir araç parkına sahibiz. Yakıt ekonomisi arayanlar için <Link href="/arac-kiralama/renault-clio-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Renault Clio</Link> veya <Link href="/arac-kiralama/hyundai-i20-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Hyundai i20</Link> gibi pratik B segmenti araçlarımız; uzun yolda yüksek bagaj hacmi arayan geniş aileler için <Link href="/arac-kiralama/fiat-egea-manuel-dizel" className="text-red-600 font-semibold hover:underline">Fiat Egea</Link> modellerimiz mevcuttur.
             </p>
-            <ul>
-              <li><strong>Adım 1 - Rezervasyon:</strong> Seyahatiniz netleştiğinde web sitemiz veya çağrı merkezimiz üzerinden aracı, tarihleri ve uçuş numaranızı sisteme girerek rezervasyon oluşturun.</li>
-              <li><strong>Adım 2 - Karşılama:</strong> İniş saatinizde Gelen Yolcu terminalinde ekibimiz sizi bekliyor olacak. Kendilerini kolaylıkla fark edeceksiniz.</li>
-              <li><strong>Adım 3 - Teslimat:</strong> Kimlik ve ehliyet kontrollerinin ardından imzanızı atıp kiralama bedelini (önceden ödemediyseniz) tahsil ederek aracınızı otoparktan çıkartıp size teslim ediyoruz.</li>
-            </ul>
-
-            <h3 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Araç İadesi ve Dönüş Yolculuğu</h3>
             <p>
-              Kiralama süreniz bittiğinde ve artık dönüş yolculuğu vakti geldiğinde de aynı kolaylığı sağlıyoruz. Çardak Havalimanı'na gelerek Giden Yolcu kapısı önünde veya belirtilen havalimanı otoparkında aracımızı yetkili personellerimize teslim edebilirsiniz. Hasar ve yakıt kontrolünün hızla tamamlanmasının ardından check-in bankolarına yönelerek evinize huzurla dönebilirsiniz. Gerek teslim alırken gerekse iade ederken işlemlerinizi en kısa sürede halletmeniz için buradayız.
+              Lüks ve gösterişten ödün vermek istemeyen müşterilerimiz için <Link href="/arac-kiralama/peugeot-3008-otomatik-dizel" className="text-red-600 font-semibold hover:underline">Peugeot 3008</Link> ve <Link href="/arac-kiralama/vw-tiguan-otomatik-benzin" className="text-red-600 font-semibold hover:underline">VW Tiguan</Link> gibi donanımlı SUV araçlarımız; protokol, düğün veya VIP karşılama organizasyonları için <Link href="/arac-kiralama/mercedes-c200-amg-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Mercedes C200</Link> ve <Link href="/arac-kiralama/mercedes-vito-otomatik-dizel" className="text-red-600 font-semibold hover:underline">VIP Vito</Link> minibüslerimiz de filomuzda yer almaktadır. Hangi aracı seçerseniz seçin, üstün bir hijyen standardıyla ve full depoya yakın yakıtla size teslim edilir.
             </p>
-          </article>
 
-          <section className="mt-20 border-t border-stone-200 pt-16">
-            <h3 className="text-3xl font-bold text-stone-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Uçağım rötar yaparsa ne olur?</h3>
-                <p className="text-stone-600">Rezervasyon esnasında uçuş numaranızı (PNR) aldığımız için uçağınızı canlı sistemler üzerinden anlık takip ediyoruz. Uçağınız ne kadar rötar yaparsa yapsın personelimiz terminal çıkışında sizi bekliyor olacaktır. Gece geç saatlere sarkan uçuşlar için de nöbetçi personelimiz mutlaka bulunmaktadır.</p>
-              </div>
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Havalimanı araç teslimi için ekstra ücret alınıyor mu?</h3>
-                <p className="text-stone-600">Denizli Çardak Havalimanı araç teslim süreçlerimiz için uygulanan fiyatlandırma, kiralama gün sayısına ve kampanya şartlarına göre değişiklik gösterebilir. Online rezervasyon sırasında eğer teslim noktası için bir drop (tek yön veya teslimat) bedeli varsa, bu tarafınıza tüm şeffaflığıyla gösterilmektedir.</p>
-              </div>
-              <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
-                <h3 className="text-xl font-bold text-stone-900 mb-2">Aracı teslim ederken nereye bırakacağım?</h3>
-                <p className="text-stone-600">Dönüş uçuşunuzdan makul bir süre önce firmamızla iletişime geçtiğinizde personelimiz havalimanı otoparkında veya giden yolcu peronunda sizi bekler. Aracı saniyeler içerisinde iade edebilir, vakit kaybetmeden uçağınıza binebilirsiniz.</p>
-              </div>
-            </div>
-          </section>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Şeffaf Sözleşme ve Tam Kapsamlı Güvenlik</h2>
+            <p>
+              Kiralama sözleşmelerimiz, tamamen Tüketici Hakları'na uygun, şeffaf ve anlaşılır maddelerden oluşmaktadır. Bireysel kiralama ve <Link href="/kurumsal-filo-kiralama" className="text-red-600 font-semibold hover:underline">Kurumsal Filo Kiralama</Link> taleplerinizde, aracı kiraladığınız günden teslim edeceğiniz güne kadar ne ödeyeceğinizi net olarak bilirsiniz. Araçlarımızdaki Yasal Rent A Car Kaskosu, olası trafik kazalarında sizin ve karşı tarafın masraflarını teminat altına alır. Çarpışma, hırsızlık veya doğal afet gibi istenmeyen durumlarda dahi hukuki ve maddi olarak koruma altındasınız.
+            </p>
+            <p>
+              Dahası, acil bir durumda ulaşabileceğiniz 7/24 açık destek hattımızla, çekici hizmetinden ikame araca kadar tüm süreçleri hızlıca organize ediyoruz. Tatilinizin veya iş seyahatinizin yarıda kalmaması için tüm operasyonel gücümüzü kullanıyoruz.
+            </p>
 
-          <div className="mt-16 text-center">
-             <Link href="/araclar" className="inline-flex px-8 py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition">
-                Havalimanına Araç Rezerve Et
-             </Link>
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli'de Görülmesi Gereken Yerler</h2>
+            <p>
+              Aracınızı teslim aldıktan sonra Denizli'nin eşsiz güzelliklerini keşfetmek için harika bir yolculuk sizi bekliyor. <Link href="/pamukkale-arac-kiralama" className="text-red-600 font-semibold hover:underline">Pamukkale</Link> Travertenleri ve Hierapolis antik kenti, dünyada eşi benzeri olmayan bir doğa harikasıdır. Buradaki Kleopatra havuzunda yüzebilir, antik tiyatronun heybetine tanıklık edebilirsiniz. 
+            </p>
+            <p>
+              Şifalı kırmızı sularıyla ünlü Karahayıt bölgesi, özellikle kış turizmi ve sağlık turizmi için vazgeçilmezdir. Eğer doğa ile iç içe olmak isterseniz, Teleferik ile Bağbaşı Yaylası'na çıkabilir, çam ormanları arasında harika bir Ege kahvaltısı yapabilirsiniz. Daha fazla gezi rehberi ve ipucu için <Link href="/bilgibankasi" className="text-red-600 font-semibold hover:underline">Bilgi Bankası</Link> sayfamızdaki içeriklerimize mutlaka göz atmalısınız.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Nasıl Rezervasyon Yaparım?</h2>
+            <p>
+              Rezervasyon sürecimiz son derece basittir. İhtiyacınıza uygun aracı web sitemizden seçtikten sonra WhatsApp üzerinden veya doğrudan iletişim numaralarımızdan bizi arayarak saniyeler içinde adınıza rezerve edebilirsiniz. İster merkezdeki ofisimizden, ister <Link href="/cardak-havalimani-arac-kiralama" className="text-red-600 font-semibold hover:underline">Çardak Havalimanı</Link> terminalinden, isterseniz de otelinizden aracınızı teslim alma esnekliğine sahipsiniz. Emir Rent A Car, koşulsuz müşteri memnuniyeti ilkesiyle Denizli yollarındaki en iyi yol arkadaşınız olmaya devam edecektir.
+            </p>
           </div>
 
+          <FAQAccordion 
+            title="Çardak Havalimanı Araç Kiralama ve Transfer Hakkında Sıkça Sorulan Sorular" 
+            faqs={[{"question":"Havalimanında araç teslimi ücretli mi?","answer":"Belirli kiralama gün sayısının üzerindeki rezervasyonlarda Çardak Havalimanı teslimatları ücretsiz veya cüzi bir yol ücreti karşılığı yapılmaktadır."},{"question":"Uçağım gece inerse aracı alabilir miyim?","answer":"Evet, 7/24 operasyonumuz sayesinde uçağınızın saati ne olursa olsun personelimiz aracınızı havalimanında teslim etmektedir."}]} 
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 mt-16 border-t border-stone-200 pt-16">
+          <RelatedCars currentSlug="none" />
+          <RelatedServices currentSlug="cardak-havalimani-arac-kiralama" />
+          <RelatedBlogs currentSlug="none" />
         </div>
       </main>
     </>

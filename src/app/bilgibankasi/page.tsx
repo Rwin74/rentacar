@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { knowledgeArticles } from '@/data/knowledge';
 
 export const metadata: Metadata = {
-  title: 'Bilgi Bankası | Emir Rent A Car Denizli',
-  description: 'Oto kiralama terimleri, araç teslimat prosedürleri ve güvenli sürüş rehberi dahil olmak üzere kiralama süreci hakkında faydalı bilgiler.',
+  title: 'Araç Kiralama Rehberi & Bilgi Bankası | Emir Rent A Car',
+  description: 'Araç kiralarken dikkat edilmesi gerekenler, kasko türleri, havalimanı teslimat prosedürleri ve Denizli araç kiralama ipuçları rehberimizde.',
   alternates: {
     canonical: 'https://www.emirdenizliotokiralama.com/bilgibankasi',
   },

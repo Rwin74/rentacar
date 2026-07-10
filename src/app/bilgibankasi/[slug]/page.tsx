@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { knowledgeArticles } from '@/data/knowledge';
+import { RelatedCars, RelatedServices, RelatedBlogs } from '@/components/RelatedSections';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -76,6 +77,12 @@ export default async function ArticlePage({ params }: Props) {
           <Link href="/araclar" className="px-8 py-4 bg-red-600 text-white font-bold rounded-2xl hover:bg-red-700 transition shrink-0">
             Araçlarımızı İnceleyin
           </Link>
+        </div>
+
+        <div className="mt-16 border-t border-stone-200 pt-16">
+          <RelatedCars currentSlug="none" />
+          <RelatedServices currentSlug="none" />
+          <RelatedBlogs currentSlug={article.slug} />
         </div>
 
       </div>

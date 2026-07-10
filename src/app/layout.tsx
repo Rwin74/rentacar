@@ -14,16 +14,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.emirdenizliotokiralama.com"),
-  title: "Denizli Rent A Car & Araç Kiralama | Emir Oto Kiralama",
-  description: "Denizli rent a car ve araç kiralama hizmetlerinde ekonomik, bakımlı ve sigortalı araç seçenekleri. Günlük, aylık ve havalimanı teslim kiralama.",
+  title: "Denizli Araç Kiralama & Rent A Car | %100 Kasko & Yeni Araçlar",
+  description: "Denizli'de güvenilir araç kiralama (rent a car) deneyimi. Uygun fiyatlar, yeni model kaskolu araçlar ve havalimanı teslim fırsatıyla hemen rezervasyon yapın!",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Denizli Rent A Car & Araç Kiralama | Emir Oto Kiralama",
-    description: "Denizli rent a car ve araç kiralama hizmetlerinde ekonomik, bakımlı ve sigortalı araç seçenekleri. Günlük, aylık ve havalimanı teslim kiralama.",
+    title: "Denizli Araç Kiralama & Rent A Car | Emir Oto Kiralama",
+    description: "Denizli'de güvenilir araç kiralama deneyimi. Uygun fiyatlar, 2024-2026 model kaskolu araçlar ve ücretsiz Çardak Havalimanı teslim fırsatları.",
     url: "https://www.emirdenizliotokiralama.com",
-    siteName: "Emir Rent A Car",
+    siteName: "Emir Rent A Car Denizli",
     images: [
       {
         url: "/images/logo.png",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Denizli Rent A Car | Emir Oto Kiralama - Havalimanı Teslim",
-    description: "Denizli ucuz rent a car, denizli araç kiralama ve profesyonel denizli oto kiralama firması. Denizli rent a car ofisimizden güvenle kiralayın.",
+    description: "Denizli ucuz rent a car, denizli araç kiralama ve profesyonel denizli oto kiralama firması. Denizli rent a car ofisimizden güvenle araç kiralayın.",
     images: ["/images/logo.png"],
   },
 };

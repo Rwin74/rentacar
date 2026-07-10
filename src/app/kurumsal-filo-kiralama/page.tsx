@@ -1,122 +1,162 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import FAQAccordion from '@/components/FAQAccordion';
+import { RelatedCars, RelatedServices, RelatedBlogs } from '@/components/RelatedSections';
 
 export const metadata: Metadata = {
-  title: 'Kurumsal Filo Kiralama | Emir Rent A Car',
-  description: 'Denizli kurumsal uzun dönem araç kiralama ve filo avantajlarıyla vergi yükünden kurtulun. Şirketlere özel fiyatlarla binek kiralama çözümleri.',
+  title: 'Denizli Kurumsal Filo Kiralama | Aylık & Yıllık Rent A Car',
+  description: 'Şirketinize özel avantajlı fiyatlarla Denizli kurumsal araç kiralama. Filo kiralama ile vergi avantajı ve operasyonel kolaylık sağlayın.',
   alternates: {
-    canonical: 'https://www.emirdenizliotokiralama.com/kurumsal-filo-kiralama',
-  },
-  openGraph: {
-    title: 'Kurumsal Filo Kiralama | Emir Rent A Car',
-    description: 'Şirketiniz için sermayenizi bağlamadan akılcı filo yönetimi. Vergi avantajı, ücretsiz bakım ve yol yardımı ile operasyonel kiralama fırsatları.',
-    url: 'https://www.emirdenizliotokiralama.com/kurumsal-filo-kiralama',
+    canonical: '/kurumsal-filo-kiralama',
   }
 };
 
-export default function KurumsalFilo() {
-  const advantages = [
+export default function ServicePage() {
+  const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "AutoRental"
+  ],
+  "name": "Emir Rent A Car",
+  "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+  "@id": "https://www.emirdenizliotokiralama.com",
+  "url": "https://www.emirdenizliotokiralama.com",
+  "telephone": "+905543950404",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Altıntop Mah. 834 Sok. No:1",
+    "addressLocality": "Merkezefendi",
+    "addressRegion": "Denizli",
+    "postalCode": "20100",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.7816,
+    "longitude": 29.0831
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "23:59"
+  }
+};
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      title: "Güçlü Öz Sermaye Yönetimi",
-      desc: "Araç satın almak için yüksek maliyetli bir toplu ödeme yapmak veya kredi limitlerinizi doldurmak yerine, aylık sabit ödemelerle sermayenizi ana işinize ayırın.",
-      icon: "💰"
+      "@type": "Question",
+      "name": "Kurumsal kiralama için minimum süre nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kurumsal kiralama hizmetimiz genellikle minimum 1 aylık periyotlarla başlamakta olup 1, 2 veya 3 yıla kadar sözleşme yapılabilmektedir."
+      }
     },
     {
-      title: "Vergi Avantajı",
-      desc: "Aylık kiralama faturalarınızı doğrudan gider gösterebilir, KDV avantajından yararlanarak şirket bilançonuzu pozitif yönde etkileyebilirsiniz.",
-      icon: "📊"
-    },
-    {
-      title: "Operasyonel Yüklerden Kurtulun",
-      desc: "Trafik sigortası, kasko, MTV, periyodik bakım veya lastik değişimi gibi evrak ve takip işleriyle tamamen veda edersiniz.",
-      icon: "⚙️"
-    },
-    {
-      title: "Kesintisiz İş Süreçleri",
-      desc: "Kiraladığınız aracın arızalanması veya bakıma girmesi durumunda anında yedek araç tahsis edilir, işleriniz asla yarım kalmaz.",
-      icon: "🔄"
-    },
-    {
-      title: "7/24 Profesyonel Destek",
-      desc: "Olası acil durumlarda yol yardım destek hattımızla günün her anı Emir Rent A Car güvencesi yanınızdadır.",
-      icon: "🛡️"
-    },
-    {
-      title: "Eskime ve Değer Kaybı Riski Yok",
-      desc: "Sıfır kilometre veya oldukça genç araçlarla prestijli bir filoya sahip olun. İkinci el değer düşüşü stresi yaşamazsınız.",
-      icon: "📉"
+      "@type": "Question",
+      "name": "Bakım ve onarım giderleri kime ait?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Filo kiralamada periyodik bakım, lastik değişimi, kasko, sigorta ve MTV gibi tüm masraflar Emir Rent A Car'a aittir."
+      }
     }
-  ];
+  ]
+};
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://www.emirdenizliotokiralama.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Denizli Kurumsal Filo Kiralama | Aylık & Yıllık Rent A Car",
+      "item": "https://www.emirdenizliotokiralama.com/kurumsal-filo-kiralama"
+    }
+  ]
+};
 
   return (
-    <main className="flex-1 w-full bg-white text-stone-800">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
-      {/* Hero Section */}
-      <section className="relative px-6 py-20 lg:py-32 bg-stone-50 overflow-hidden">
-        <div className="absolute inset-0 bg-red-600/5 pattern-dots pointer-events-none" />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-8">
-            Kurumsal Filo Kiralama
-          </h1>
-          <p className="text-xl text-stone-600 leading-relaxed mb-10">
-            Şirketinizin ihtiyaçlarına tam uyan, sıfır maliyet stresi ve yüksek vergi avantajıyla Denizli'nin en prestijli uzun dönem operasyonel kiralama çözümü.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-             <a 
-                href="https://wa.me/905543950404?text=Merhaba, şirketimiz için uzun dönem filo kiralama şartlarınız ve teklifleriniz hakkında detaylı görüşmek istiyorum." 
-                target="_blank" 
-                rel="nofollow noopener noreferrer"
-                className="px-8 py-4 bg-red-600 text-white font-bold rounded-2xl hover:bg-red-700 transition shadow-xl shadow-red-600/20"
-             >
-                Teklif İste
-             </a>
-             <Link 
-                href="/araclar"
-                className="px-8 py-4 bg-white border border-stone-200 text-stone-700 font-bold rounded-2xl hover:bg-stone-50 transition"
-             >
-                Geniş Filomuzu İncele
-             </Link>
+      <main className="flex-1 w-full bg-white py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-stone-900 mb-8 tracking-tight">Şirketler İçin Kurumsal Araç ve Filo Kiralama</h1>
+          
+          <div className="prose prose-stone prose-lg max-w-none text-stone-600 space-y-6">
+            <p className="lead text-xl text-stone-800 font-medium">
+              Şirketler İçin Kurumsal Araç ve Filo Kiralama alanında Denizli'nin en güvenilir adresi Emir Rent A Car olarak, siz değerli misafirlerimize kesintisiz, güvenli ve ekonomik çözümler sunuyoruz. Yılların getirdiği sektör tecrübemiz ve genişleyen modern araç filomuzla yanınızdayız.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Neden Emir Rent A Car'ı Tercih Etmelisiniz?</h2>
+            <p>
+              Gelişen ve büyüyen Denizli'nin ulaşım ihtiyaçları, esnek ve hızlı çözümleri zorunlu kılıyor. Şehre ister iş, ister gezi, ister aile ziyareti için gelin, doğru araç kiralama firmasını bulmak yolculuğunuzun kalitesini doğrudan etkileyecektir. Firmamız, %100 yasal rent a car kaskosu, periyodik bakımları eksiksiz yapılmış araçları ve 7/24 kesintisiz müşteri desteğiyle sektörde fark yaratmaktadır. 
+            </p>
+            <p>
+              Müşteri memnuniyetini merkeze alan hizmet anlayışımızla, araç kiralama sürecindeki karmaşık evrak işlerini ve prosedürleri en aza indirgiyoruz. İnternet sitemiz üzerinden dakikalar içinde rezervasyon yapabilir veya <Link href="/araclar" className="text-red-600 font-semibold hover:underline">araç filomuz</Link> içinden bütçenize en uygun modeli seçerek hemen yola koyulabilirsiniz. Gizli ücretler, son dakika sürprizleri veya ekstra kesintilerle asla karşılaşmazsınız; fiyatlarımız tamamen şeffaftır.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Filomuz ve Araç Seçenekleri</h2>
+            <p>
+              Her bütçeye ve her ihtiyaca uygun geniş bir araç parkına sahibiz. Yakıt ekonomisi arayanlar için <Link href="/arac-kiralama/renault-clio-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Renault Clio</Link> veya <Link href="/arac-kiralama/hyundai-i20-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Hyundai i20</Link> gibi pratik B segmenti araçlarımız; uzun yolda yüksek bagaj hacmi arayan geniş aileler için <Link href="/arac-kiralama/fiat-egea-manuel-dizel" className="text-red-600 font-semibold hover:underline">Fiat Egea</Link> modellerimiz mevcuttur.
+            </p>
+            <p>
+              Lüks ve gösterişten ödün vermek istemeyen müşterilerimiz için <Link href="/arac-kiralama/peugeot-3008-otomatik-dizel" className="text-red-600 font-semibold hover:underline">Peugeot 3008</Link> ve <Link href="/arac-kiralama/vw-tiguan-otomatik-benzin" className="text-red-600 font-semibold hover:underline">VW Tiguan</Link> gibi donanımlı SUV araçlarımız; protokol, düğün veya VIP karşılama organizasyonları için <Link href="/arac-kiralama/mercedes-c200-amg-otomatik-benzin" className="text-red-600 font-semibold hover:underline">Mercedes C200</Link> ve <Link href="/arac-kiralama/mercedes-vito-otomatik-dizel" className="text-red-600 font-semibold hover:underline">VIP Vito</Link> minibüslerimiz de filomuzda yer almaktadır. Hangi aracı seçerseniz seçin, üstün bir hijyen standardıyla ve full depoya yakın yakıtla size teslim edilir.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Şeffaf Sözleşme ve Tam Kapsamlı Güvenlik</h2>
+            <p>
+              Kiralama sözleşmelerimiz, tamamen Tüketici Hakları'na uygun, şeffaf ve anlaşılır maddelerden oluşmaktadır. Bireysel kiralama ve <Link href="/kurumsal-filo-kiralama" className="text-red-600 font-semibold hover:underline">Kurumsal Filo Kiralama</Link> taleplerinizde, aracı kiraladığınız günden teslim edeceğiniz güne kadar ne ödeyeceğinizi net olarak bilirsiniz. Araçlarımızdaki Yasal Rent A Car Kaskosu, olası trafik kazalarında sizin ve karşı tarafın masraflarını teminat altına alır. Çarpışma, hırsızlık veya doğal afet gibi istenmeyen durumlarda dahi hukuki ve maddi olarak koruma altındasınız.
+            </p>
+            <p>
+              Dahası, acil bir durumda ulaşabileceğiniz 7/24 açık destek hattımızla, çekici hizmetinden ikame araca kadar tüm süreçleri hızlıca organize ediyoruz. Tatilinizin veya iş seyahatinizin yarıda kalmaması için tüm operasyonel gücümüzü kullanıyoruz.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Denizli'de Görülmesi Gereken Yerler</h2>
+            <p>
+              Aracınızı teslim aldıktan sonra Denizli'nin eşsiz güzelliklerini keşfetmek için harika bir yolculuk sizi bekliyor. <Link href="/pamukkale-arac-kiralama" className="text-red-600 font-semibold hover:underline">Pamukkale</Link> Travertenleri ve Hierapolis antik kenti, dünyada eşi benzeri olmayan bir doğa harikasıdır. Buradaki Kleopatra havuzunda yüzebilir, antik tiyatronun heybetine tanıklık edebilirsiniz. 
+            </p>
+            <p>
+              Şifalı kırmızı sularıyla ünlü Karahayıt bölgesi, özellikle kış turizmi ve sağlık turizmi için vazgeçilmezdir. Eğer doğa ile iç içe olmak isterseniz, Teleferik ile Bağbaşı Yaylası'na çıkabilir, çam ormanları arasında harika bir Ege kahvaltısı yapabilirsiniz. Daha fazla gezi rehberi ve ipucu için <Link href="/bilgibankasi" className="text-red-600 font-semibold hover:underline">Bilgi Bankası</Link> sayfamızdaki içeriklerimize mutlaka göz atmalısınız.
+            </p>
+
+            <h2 className="text-3xl font-bold text-stone-900 mt-12 mb-6">Nasıl Rezervasyon Yaparım?</h2>
+            <p>
+              Rezervasyon sürecimiz son derece basittir. İhtiyacınıza uygun aracı web sitemizden seçtikten sonra WhatsApp üzerinden veya doğrudan iletişim numaralarımızdan bizi arayarak saniyeler içinde adınıza rezerve edebilirsiniz. İster merkezdeki ofisimizden, ister <Link href="/cardak-havalimani-arac-kiralama" className="text-red-600 font-semibold hover:underline">Çardak Havalimanı</Link> terminalinden, isterseniz de otelinizden aracınızı teslim alma esnekliğine sahipsiniz. Emir Rent A Car, koşulsuz müşteri memnuniyeti ilkesiyle Denizli yollarındaki en iyi yol arkadaşınız olmaya devam edecektir.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Avantajlar Grid Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">Neden Operasyonel Kiralama?</h2>
-          <p className="text-stone-500 max-w-2xl mx-auto">Satın almanın getirdiği gizli maliyetlerden tamamen kurtularak şirketinizi geleceğe çok daha esnek bir şekilde taşıyın.</p>
+          <FAQAccordion 
+            title="Şirketler İçin Kurumsal Araç ve Filo Kiralama Hakkında Sıkça Sorulan Sorular" 
+            faqs={[{"question":"Kurumsal kiralama için minimum süre nedir?","answer":"Kurumsal kiralama hizmetimiz genellikle minimum 1 aylık periyotlarla başlamakta olup 1, 2 veya 3 yıla kadar sözleşme yapılabilmektedir."},{"question":"Bakım ve onarım giderleri kime ait?","answer":"Filo kiralamada periyodik bakım, lastik değişimi, kasko, sigorta ve MTV gibi tüm masraflar Emir Rent A Car'a aittir."}]} 
+          />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {advantages.map((item, idx) => (
-            <div key={idx} className="p-8 rounded-3xl bg-white border border-stone-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
-              <div className="text-4xl mb-6">{item.icon}</div>
-              <h3 className="text-xl font-bold text-stone-900 mb-3">{item.title}</h3>
-              <p className="text-stone-500 leading-relaxed text-sm">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+        <div className="max-w-6xl mx-auto px-6 mt-16 border-t border-stone-200 pt-16">
+          <RelatedCars currentSlug="none" />
+          <RelatedServices currentSlug="kurumsal-filo-kiralama" />
+          <RelatedBlogs currentSlug="none" />
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-stone-900 text-white py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-6">Şirketinize Özel Fiyatlandırmalar İçin Görüşelim</h3>
-          <p className="text-stone-400 mb-10 leading-relaxed">
-            Hemen kurumsal müşteri temsilcimiz ile iletişime geçin, işletmenizin büyüklüğüne ve aylık kullanım yoğunluğunuza en uygun filo kiralama taahhüdünü birlikte tasarlayalım.
-          </p>
-          <a   
-            href="mailto:info@emirdenizliotokiralama.com"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-stone-900 font-bold rounded-2xl hover:bg-stone-100 transition"
-          >
-            <svg fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-            Kurumsal Departmana Yazın
-          </a>
-        </div>
-      </section>
-
-    </main>
+      </main>
+    </>
   );
 }

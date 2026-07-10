@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Sıkça Sorulan Sorular | Emir Rent A Car Denizli',
-  description: 'Araç kiralama şartları, depozito süreleri, kasko kapsamı ve Denizli oto kiralama hakkında en çok merak edilen soruların yanıtları.',
+  title: 'Araç Kiralama Sıkça Sorulan Sorular | Emir Rent A Car',
+  description: 'Araç kiralama şartları, depozito iade süreleri, kasko kapsamı ve Denizli oto kiralama hakkında merak ettiğiniz tüm soruların yanıtları burada.',
   alternates: {
     canonical: '/sss',
   },
