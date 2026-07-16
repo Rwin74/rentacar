@@ -6,25 +6,39 @@ import { cars } from "@/data/cars";
 export default function Home() {
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "AutoRental",
-    "name": "Emir Rent A Car",
-    "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
-    "url": "https://www.emirdenizliotokiralama.com",
-    "telephone": "+905543950404",
-    "email": "info@emirdenizliotokiralama.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 Mayıs Mahallesi Atatürk Caddesi No:31 Adım Apartmanı",
-      "addressLocality": "Merkez",
-      "addressRegion": "Denizli",
-      "addressCountry": "TR",
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "00:00",
-      "closes": "23:59",
-    },
+    "@graph": [
+      {
+        "@type": "AutoRental",
+        "@id": "https://www.emirdenizliotokiralama.com/#organization",
+        "name": "Emir Rent A Car",
+        "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+        "url": "https://www.emirdenizliotokiralama.com",
+        "telephone": "+905543950404",
+        "email": "info@emirdenizliotokiralama.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "15 Mayıs Mahallesi Atatürk Caddesi No:31 Adım Apartmanı",
+          "addressLocality": "Merkez",
+          "addressRegion": "Denizli",
+          "addressCountry": "TR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.emirdenizliotokiralama.com/#website",
+        "url": "https://www.emirdenizliotokiralama.com",
+        "name": "Emir Rent A Car",
+        "publisher": {
+          "@id": "https://www.emirdenizliotokiralama.com/#organization"
+        }
+      }
+    ]
   };
 
   // Get Peugeot, Egea, Clio

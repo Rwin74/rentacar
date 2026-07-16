@@ -57,6 +57,7 @@ export default async function CarDetailPage({ params }: Props) {
   const vehicleSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `https://www.emirdenizliotokiralama.com/arac-kiralama/${car.slug}#product`,
     "name": car.model,
     "image": `https://www.emirdenizliotokiralama.com${car.image}`,
     "description": car.description[0],
@@ -77,7 +78,8 @@ export default async function CarDetailPage({ params }: Props) {
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
-        "name": "Emir Rent A Car"
+        "name": "Emir Rent A Car",
+        "@id": "https://www.emirdenizliotokiralama.com/#organization"
       }
     },
     "additionalProperty": [

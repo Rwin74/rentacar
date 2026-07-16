@@ -37,8 +37,39 @@ export default async function ArticlePage({ params }: Props) {
     notFound();
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `https://www.emirdenizliotokiralama.com/bilgibankasi/${article.slug}#article`,
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": "https://www.emirdenizliotokiralama.com/images/logo.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Emir Rent A Car",
+      "@id": "https://www.emirdenizliotokiralama.com/#organization"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Emir Rent A Car",
+      "@id": "https://www.emirdenizliotokiralama.com/#organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.emirdenizliotokiralama.com/images/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.emirdenizliotokiralama.com/bilgibankasi/${article.slug}`
+    }
+  };
+
   return (
     <main className="flex-1 w-full bg-white py-16 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="mb-10">
