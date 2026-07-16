@@ -24,14 +24,23 @@ export default function Navbar() {
           <Link href="/sss" className="hover:text-red-600 transition">S.S.S</Link>
         </div>
 
-        <a 
-          href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." 
-          target="_blank" 
-          rel="nofollow noopener noreferrer"
-          className="flex items-center justify-center px-5 py-2.5 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition"
-        >
-          Bize Ulaşın
-        </a>
+        <div className="flex items-center gap-4">
+          {/* Language Switch */}
+          <div className="flex items-center gap-1 text-sm font-semibold text-stone-500">
+            <Link href="/" className="hover:text-red-600 transition" title="Türkçe">TR</Link>
+            <span className="text-stone-300">|</span>
+            <Link href="/en" className="hover:text-red-600 transition" title="English">EN</Link>
+          </div>
+
+          <a 
+            href="https://wa.me/905543950404?text=Merhaba,%20araç%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." 
+            target="_blank" 
+            rel="nofollow noopener noreferrer"
+            className="flex items-center justify-center px-5 py-2.5 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition"
+          >
+            Bize Ulaşın
+          </a>
+        </div>
       </div>
     </nav>
   );

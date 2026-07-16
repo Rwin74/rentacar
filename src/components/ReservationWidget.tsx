@@ -25,6 +25,13 @@ export default function ReservationWidget() {
     e.preventDefault();
     if (!pickupDate || !dropoffDate || !vehicle || !name) return;
 
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'whatsapp_click', {
+        'event_category': 'conversion',
+        'event_label': `Widget - ${vehicle}`,
+      });
+    }
+
     const message = `Merhaba, benim adım ${name}. ${pickupDate} - ${dropoffDate} tarihleri arasında ${vehicle} aracınızı kiralamak için rezervasyon oluşturmak istiyorum. Müsaitlik durumunuz nedir?`;
     window.open(`https://wa.me/905543950404?text=${encodeURIComponent(message)}`, "_blank");
   };

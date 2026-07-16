@@ -1,0 +1,78 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { cars } from '@/data/cars';
+
+export const metadata: Metadata = {
+  title: 'Car Rental Fleet in Denizli | Emir Rent A Car',
+  description: 'Explore our fleet of rental cars in Denizli. Economic, SUV, and VIP rental options with full insurance. Book your car with Emir Rent A Car.',
+  alternates: {
+    canonical: '/en/cars',
+  },
+};
+
+export default function EnglishCars() {
+  const contactNumber = "905543950404";
+
+  return (
+    <main className="flex-1 w-full bg-stone-50 py-16">
+      <div className="max-w-6xl mx-auto px-6">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight mb-4">
+            Our Vehicle Fleet
+          </h1>
+          <p className="text-lg text-stone-600 max-w-4xl mx-auto mb-6">
+            Choose the best car for your needs and rent it today. At Emir Rent A Car Denizli, we offer a rich fleet catering to every budget and scenario. From fuel-efficient economy cars for city trips to luxury sedans and spacious SUVs for family road trips.
+          </p>
+        </div>
+
+        {/* Cars Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cars.map((car) => (
+            <div key={car.id} className="bg-white rounded-3xl p-6 border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+              <span className="inline-block px-3 py-1 bg-stone-100 text-stone-600 text-xs font-semibold rounded-full w-fit mb-4">
+                {car.class}
+              </span>
+              
+              <div className="flex-grow flex items-center justify-center mb-6 py-4">
+                <Link href={`/arac-kiralama/${car.slug}`}>
+                  <Image
+                    src={car.image}
+                    alt={`Denizli car rental - ${car.model}`}
+                    width={300}
+                    height={200}
+                    quality={75}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
+                    className="w-full h-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform cursor-pointer"
+                  />
+                </Link>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-stone-900 mb-1">{car.model}</h3>
+              <div className="text-red-600 font-bold text-xl mb-4">{car.price} {car.price !== "Fiyat Sorunuz" && <span className="text-sm font-normal text-stone-500">/ Day</span>}</div>
+              
+              <div className="mt-auto grid grid-cols-2 gap-3">
+                <Link 
+                  href={`/arac-kiralama/${car.slug}`} 
+                  className="flex items-center justify-center py-3 bg-stone-100 text-stone-800 text-sm font-bold rounded-xl hover:bg-stone-200 transition"
+                >
+                  Details
+                </Link>
+                <a 
+                  href={`https://wa.me/${contactNumber}?text=Hello, I would like to get information about renting ${car.model}.`}
+                  target="_blank" rel="noopener noreferrer"
+                  className="flex items-center justify-center py-3 bg-green-500 text-white text-sm font-medium rounded-xl hover:bg-green-600 transition"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </main>
+  );
+}

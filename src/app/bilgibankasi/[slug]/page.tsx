@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { knowledgeArticles } from '@/data/knowledge';
 import { RelatedCars, RelatedServices, RelatedBlogs } from '@/components/RelatedSections';
+import { applyInternalLinks } from '@/utils/internalLinking';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -94,7 +95,7 @@ export default async function ArticlePage({ params }: Props) {
           <div className="prose prose-stone lg:prose-lg max-w-none text-stone-800 mb-12">
             <h2 className="sr-only">{article.title} Detayları</h2>
             {article.content.map((paragraph, index) => (
-              <p key={index} className="text-stone-800 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: paragraph }}></p>
+              <p key={index} className="text-stone-800 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: applyInternalLinks(paragraph) }}></p>
             ))}
           </div>
         </article>
